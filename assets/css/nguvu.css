@@ -1,0 +1,458 @@
+/*
+ * NguvuSlider v1.1.0
+ * Contributing author: Mama Apima
+ * 
+ */
+.ecitizen-content h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.ecitizen-content h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.maia-cols img {
+    max-width: 100%
+}
+
+.nguvu-scroll-carousel {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative
+}
+
+.nguvu-scroll-carousel-content {
+    height: 100%;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    -moz-transition: left .6s ease;
+    -o-transition: left .6s ease;
+    -webkit-transition: left .6s ease;
+    transition: left .6s ease
+}
+
+.nguvu-scroll-carousel-item {
+    display: inline-block;
+    height: 100%;
+    min-height: 300px;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%
+}
+
+* + html .nguvu-scroll-carousel-item {
+    display: inline;
+    height: 100%;
+    zoom: 1
+}
+
+.nguvu-selector {
+    bottom: 0;
+    position: absolute;
+    -moz-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+    width: 100%;
+    z-index: 10
+}
+
+.nguvu-selector-content {
+    text-align: center
+}
+
+.nguvu-selector-control-item {
+    background: #767676;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0 3.5px 10px 3.5px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    width: 8px
+}
+
+.nguvu-selector-control-item-selected {
+    background: #fff
+}
+
+.nguvu-selector-control-item-active {
+    background: #fff
+}
+
+@media screen and (max-width: 767px) {
+    .ecitizen-hero * {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .7)
+    }
+}
+
+.ecitizen-hero {
+    background-position: center;
+    height: 410px;
+    position: relative
+}
+
+.ecitizen-hero-carousel {
+    background: #ddd
+}
+
+@media screen and (max-width: 1260px) {
+    .ecitizen-hero {
+        margin: 0 -15px;
+        padding: 0 15px
+    }
+
+    .ecitizen-hero.ecitizen-hero-carousel {
+        padding: 0
+    }
+
+    .ecitizen-hero.ecitizen-hero-carousel .maia-aux {
+        padding: 15px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ecitizen-hero {
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        height: auto;
+        padding: 35px 15px
+    }
+}
+
+.ecitizen-hero .maia-aux,
+.ecitizen-hero .maia-cols,
+.ecitizen-hero .maia-cols > div,
+.ecitizen-vertical-center,
+.ecitizen-vertical-center > div {
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.ecitizen-vertical-center {
+    display: table;
+    width: 100%
+}
+
+.ecitizen-vertical-center > div,
+.ecitizen-vertical-center > div {
+    display: table-cell;
+    vertical-align: middle
+}
+
+@media screen and (max-width: 767px) {
+    .ecitizen-hero .maia-aux,
+    .ecitizen-hero .maia-cols,
+    .ecitizen-hero .maia-cols > div,
+    .ecitizen-vertical-center,
+    .ecitizen-vertical-center > div {
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .ecitizen-vertical-center,
+    .ecitizen-vertical-center > div {
+        display: block
+    }
+}
+
+.ecitizen-about .ecitizen-hero {
+    height: 500px
+}
+
+.ecitizen-about .ecitizen-hero .nguvu-scroll-carousel-item:nth-child(1) .ecitizen-content {
+    padding-right: 54px
+}
+
+.ecitizen-about-carousel-item-1 {
+    background: url(../img/ecitizen-carousel-1.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-2 {
+    background: url(../images/ecitizen-carousel-2.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-3 {
+    background: url(../images/ecitizen-carousel-3.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-4 {
+    background: url(../images/evisa-carousel-1.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-5 {
+    background: url(../images/evisa-carousel-2.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-6 {
+    background: url(../images/evisa-carousel-3.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-7 {
+    background: url(../images/ebusiness-carousel-1.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-8 {
+    background: url(../images/ebusiness-carousel-2.png) no-repeat
+}
+
+.ecitizen-about-carousel-item-9 {
+    background: url(../images/ebusiness-carousel-3.png) no-repeat
+}
+
+.ecitizen-about .ecitizen-hero .nguvu-scroll-carousel-item {
+    background-position: center
+}
+
+.ecitizen-about .ecitizen-page .maia-col-7 > div {
+    max-width: 423px
+}
+
+@media screen and (max-width: 767px) {
+    .ecitizen-about .ecitizen-hero {
+        height: 470px
+    }
+
+    .ecitizen-hero h1 {
+        margin-top: 20px
+    }
+
+    .ecitizen-about .ecitizen-hero .maia-cols > div {
+        max-width: 60%
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 675px) {
+    .ecitizen-mobile .ecitizen-hero .ecitizen-vertical-center,
+    .ecitizen-mobile .ecitizen-hero .ecitizen-content,
+    .ecitizen-mobile .ecitizen-hero .maia-col-4 h1 {
+        margin-bottom: 0
+    }
+
+    .ecitizen-mobile .ecitizen-hero .maia-col-4 {
+        clear: none;
+        float: left !important;
+        width: 46.5% !important
+    }
+
+    .ecitizen-mobile .ecitizen-hero .maia-col-4.ecitizen-wide {
+        float: right !important;
+        display: block !important;
+        padding: 30px 3% 0;
+        text-align: right
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ecitizen-about-carousel-item-1 {
+        background: url(../images/ecitizen-carousel-1_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-2 {
+        background: url(../images/ecitizen-carousel-2_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-3 {
+        background: url(../images/ecitizen-carousel-3_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-4 {
+        background: url(../images/evisa-carousel-1_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-5 {
+        background: url(../images/evisa-carousel-2_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-6 {
+        background: url(../images/evisa-carousel-3_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-7 {
+        background: url(../images/ebusiness-carousel-1_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-8 {
+        background: url(../images/ebusiness-carousel-2_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-9 {
+        background: url(../images/ebusiness-carousel-3_mobile.png) no-repeat
+    }
+
+    .ecitizen-about-carousel-item-1,
+    .ecitizen-about-carousel-item-2,
+    .ecitizen-about-carousel-item-3,
+    .ecitizen-about-carousel-item-4,
+    .ecitizen-about-carousel-item-5,
+    .ecitizen-about-carousel-item-6,
+    .ecitizen-about-carousel-item-7,
+    .ecitizen-about-carousel-item-8,
+    .ecitizen-about-carousel-item-9 {
+        background-position: bottom
+    }
+
+    .ecitizen-about .ecitizen-hero .maia-cols > div {
+        max-width: 80%
+    }
+
+    .ecitizen-about .ecitizen-hero .ecitizen-about-carousel-item-1 .maia-cols > div {
+        max-width: 100%
+    }
+
+    .ecitizen-work .ecitizen-hero {
+        background-position: 42% center
+    }
+}
+
+.maia-col-1 {
+    width: 5.35714%;
+}
+
+.maia-col-2 {
+    width: 13.6905%;
+}
+
+.maia-col-3 {
+    width: 22.0238%;
+}
+
+.maia-col-4 {
+    width: 30.3571%;
+}
+
+.maia-col-5 {
+    width: 38.6905%;
+}
+
+.maia-col-6 {
+    width: 47.0238%;
+}
+
+.maia-col-7 {
+    width: 55.3571%;
+}
+
+.maia-col-8 {
+    width: 63.6905%;
+}
+
+.maia-col-9 {
+    width: 72.0238%;
+}
+
+.maia-col-10 {
+    width: 80.3571%;
+}
+
+.maia-col-11 {
+    width: 88.6905%;
+}
+
+.maia-col-12 {
+    width: 97.0238%;
+}
+
+#maia-nav-y + .maia-article .maia-col-1 {
+    width: 6.42857%;
+}
+
+#maia-nav-y + .maia-article .maia-col-2 {
+    width: 16.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-3 {
+    width: 26.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-4 {
+    width: 36.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-5 {
+    width: 46.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-6 {
+    width: 56.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-7 {
+    width: 66.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-8 {
+    width: 76.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-9 {
+    width: 86.4286%;
+}
+
+#maia-nav-y + .maia-article .maia-col-10, #maia-nav-y + .maia-article .maia-col-11, #maia-nav-y + .maia-article .maia-col-12 {
+    width: 96.4286%;
+}
+
+.maia-col-1, .maia-col-2, .maia-col-3, .maia-col-4, .maia-col-5, .maia-col-6, .maia-col-7, .maia-col-8, .maia-col-9, .maia-col-10, .maia-col-11, .maia-col-12 {
+    float: left;
+    margin: 0 1.4881% 20px;
+}
+
+* html .maia-col-1, * html .maia-col-2, * html .maia-col-3, * html .maia-col-4, * html .maia-col-5, * html .maia-col-6, * html .maia-col-7, * html .maia-col-8, * html .maia-col-9, * html .maia-col-10, * html .maia-col-11, * html .maia-col-12 {
+    margin: 0;
+    padding: 0 1.4% 20px;
+}
+
+* + html .maia-col-1, * + html .maia-col-2, * + html .maia-col-3, * + html .maia-col-4, * + html .maia-col-5, * + html .maia-col-6, * + html .maia-col-7, * + html .maia-col-8, * + html .maia-col-9, * + html .maia-col-10, * + html .maia-col-11, * + html .maia-col-12 {
+    margin: 0 1.4% 20px;
+}
+
+#maia-nav-y + .maia-article .maia-col-1, #maia-nav-y + .maia-article .maia-col-2, #maia-nav-y + .maia-article .maia-col-3, #maia-nav-y + .maia-article .maia-col-4, #maia-nav-y + .maia-article .maia-col-5, #maia-nav-y + .maia-article .maia-col-6, #maia-nav-y + .maia-article .maia-col-7, #maia-nav-y + .maia-article .maia-col-8, #maia-nav-y + .maia-article .maia-col-9, #maia-nav-y + .maia-article .maia-col-10, #maia-nav-y + .maia-article .maia-col-11, #maia-nav-y + .maia-article .maia-col-12 {
+    margin: 0 1.78571% 20px;
+}
+
+* + html #maia-nav-y + .maia-article .maia-col-1, * + html #maia-nav-y + .maia-article .maia-col-2, * + html #maia-nav-y + .maia-article .maia-col-3, * + html #maia-nav-y + .maia-article .maia-col-4, * + html #maia-nav-y + .maia-article .maia-col-5, * + html #maia-nav-y + .maia-article .maia-col-6, * + html #maia-nav-y + .maia-article .maia-col-7, * + html #maia-nav-y + .maia-article .maia-col-8, * + html #maia-nav-y + .maia-article .maia-col-9, * + html #maia-nav-y + .maia-article .maia-col-10, * + html #maia-nav-y + .maia-article .maia-col-11, * + html #maia-nav-y + .maia-article .maia-col-12 {
+    margin: 0 1.7% 20px;
+}
+
+[dir="rtl"] .maia-col-1, [dir="rtl"] .maia-col-2, [dir="rtl"] .maia-col-3, [dir="rtl"] .maia-col-4, [dir="rtl"] .maia-col-5, [dir="rtl"] .maia-col-6, [dir="rtl"] .maia-col-7, [dir="rtl"] .maia-col-8, [dir="rtl"] .maia-col-9, [dir="rtl"] .maia-col-10, [dir="rtl"] .maia-col-11, [dir="rtl"] .maia-col-12 {
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .maia-cols {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .maia-col-1, .maia-col-2, .maia-col-3, .maia-col-4, .maia-col-5, .maia-col-6, .maia-col-7, .maia-col-8, .maia-col-9, .maia-col-10, .maia-col-11, .maia-col-12 {
+        clear: both;
+        float: none !important;
+        margin: 0 0 20px !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1260px) {
+    .ecitizen-hero {
+        margin: 0;
+    }
+}
+
+

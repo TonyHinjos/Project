@@ -1,0 +1,41 @@
+#slider-1 {
+    vertical-align: middle;
+}
+
+.switch-button-label {
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.switch-button-label.off {
+    color: #adadad;
+}
+
+.switch-button-label.on {
+    color: #439C43;
+}
+
+.switch-button-background {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+
+    background: #F5F4F4;
+    border: 1px solid #D4D3D3;
+
+    margin: 1px 10px;
+
+    cursor: pointer;
+}
+
+.switch-button-button {
+    position: absolute;
+    left: -1px;
+    top: -3px;
+
+    background: #5CB85C;
+    border: 1px solid #398439;
+
+    padding: 2px 0;
+}
