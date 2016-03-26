@@ -3,8 +3,8 @@
 require_once('AfricasTalkingGateway.php');
 
 // Specify your login credentials
-$username = "urandu";
-$apikey = "1677ae70e5d03411d857f3c22e046441681af2f56c3052cadad3f0305aaa3218";
+$username = "tonyhinjos";
+$apikey = "aab1db5152482a55e83139c84d9b88427dfa415dbada24a5f91d975fed41e556";
 
 // Specify the numbers that you want to send to in a comma-separated list
 // Please ensure you include the country code (+254 for Kenya in this case)

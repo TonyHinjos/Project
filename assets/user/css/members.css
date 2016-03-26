@@ -1,0 +1,778 @@
+/* ___________________________________________________________________________________
+   
+   CSS Framework for Eicra Script [Member's Panel]
+   ___________________________________________________________________________________ */
+
+h1, h2, h3, h4, h5, h6{
+	margin:5px 0;
+	color:#555555;
+}
+
+h4{
+	font-size:22px;
+}
+
+h5{
+	font-size:20px;
+}
+
+iframe {
+	width:100%;
+	border:0;
+}
+
+/* Dashboard ------------------------------------------------------------------------ */
+
+.welcome-panel {
+    background-color: #FAFAFA;
+    border: 1px solid #dddddd;
+    margin-bottom: 28px;
+    padding: 10px;
+}
+
+.welcome-panel figure{
+	-moz-transition: all 0.9s ease;
+	-webkit-transition: all 0.9s ease;
+	-o-transition: all 0.9s ease;
+	-ms-transition: all 0.9s ease;
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+	border:1px solid #E9E9E9;
+	background-color:#FFF;
+	padding:5px;
+	margin-bottom:10px;
+	display:inline-block;
+	width:100%;
+	color: #8F8F8F;
+	font-size:15px;
+	line-height:normal;
+}
+
+.welcome-panel figure i{
+	width:40%;
+	line-height:55px;
+	color:#FFF;
+	text-align:center;
+	font-size:30px;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+.welcome-panel figure i.date{
+	background-color:#FDA744;
+}
+
+.welcome-panel figure .count{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:25px;
+	color:#3B414E;
+	letter-spacing:-1px;
+}
+
+.dashboard-icon .tools-icon{
+	display: inline-block;
+    vertical-align: top;
+    width: 100%;
+	height: 110px;
+	border:1px solid #DDDDDD;
+	background-color:#FFF;
+	border-radius:4px;
+	text-align:center;
+	padding:10px 5px;
+	margin:10px auto;
+	position:relative;
+}
+
+.dashboard-icon .tools-icon:hover{
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-icon .tools-icon,
+.dashboard-icon .tools-icon:hover,
+.dashboard-icon .tools-icon .circle,
+.dashboard-icon .tools-icon:hover .circle,
+.dashboard-icon .tools-icon i.action,
+.dashboard-icon .tools-icon:hover i.action{
+	transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+
+.dashboard-icon .tools-icon:hover .circle{
+	-webkit-transform:scale(1.2,1.2);
+	-moz-transform:scale(1.2,1.2);
+	-o-transform:scale(1.2,1.2);
+	transform:scale(1.2,1.2);
+}
+
+.dashboard-icon .tools-icon:hover i.action{
+	-webkit-transform:scale(0.7,0.7);
+	-moz-transform:scale(0.7,0.7);
+	-o-transform:scale(0.7,0.7);
+	transform:scale(0.7,0.7);	
+}
+
+.dashboard-icon .tools-icon a{
+	font-size:14px;
+	display:block;
+	text-decoration:none;
+	line-height:15px;
+}
+
+.dashboard-icon .tools-icon .circle{
+	width:52px;
+	height:52px;
+	margin:0 auto 10px auto;
+	border-radius:100%;
+	position:relative;
+}
+
+.dashboard-icon .tools-icon .circle.circle-blue{
+	background-color:#2199DA;
+}
+
+.dashboard-icon .tools-icon .circle.circle-green{
+	background-color:#9ABC32;
+}
+
+.dashboard-icon .tools-icon .circle.circle-light-green{
+	background-color:#29BC6B;
+}
+
+.dashboard-icon .tools-icon .circle.circle-red{
+	background-color:#D53F40;
+}
+
+.dashboard-icon .tools-icon .circle.circle-purple{
+	background-color:#CB6FD7;
+}
+
+.dashboard-icon .tools-icon .circle.circle-deep-purple{
+	background-color:#5652AB;
+}
+
+.dashboard-icon .tools-icon .circle.circle-orange{
+	background-color:#F15941;
+}
+
+.dashboard-icon .tools-icon .circle.circle-black{
+	background-color:#919191;
+}
+
+.dashboard-icon .tools-icon .circle.circle-yellow{
+	background-color:#E9C146;
+}
+
+.dashboard-icon .tools-icon .circle.circle-pink{
+	background-color:#E95294;
+}
+
+.dashboard-icon .tools-icon .circle > i {
+	color: rgba(255, 255, 255, 0.9);
+	font-size:25px;
+    text-align: center;
+	vertical-align:middle;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-icon .tools-icon .circle > i:before{
+	background-color:rgba(255, 255, 255, 0.2);
+	border-radius: 100%;
+    position: relative;
+    top: 0;
+	right:-1px;
+	width:48px;
+	line-height:48px;
+	display:block;
+}
+
+.dashboard-icon .tools-icon i.action{
+	font-size:14px;
+	background-color:#0088DD;
+	color:#FFF;
+	width:20px;
+	height:20px;
+	line-height:22px;
+	position:absolute;
+	top:36px;
+	right:0px;
+	text-align:center;
+	vertical-align:middle;
+	border-radius: 100px;
+	display:block;
+}
+
+.dashboard-icon .tools-icon:hover i.action{
+	top:36px;
+	right:-12px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Icon ----------------------------------------------------------------------------- */
+
+i.green,
+i.red,
+i.blue,
+i.orange,
+i.grey,
+i.purple{
+	font-size:19px;
+	width: 25px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+i.fa-spin{
+	font-size:14px;
+	width: 25px;
+	text-align:center;
+}
+
+i.spacer{
+	width:19px;
+	display:block;
+}
+
+i.order{
+	font-size:18px;
+	margin:6px 3px 0 3px;
+}
+
+i.editor{
+	font-size:60px;
+}
+
+i.connection{
+	font-size:150px;
+	color:#A9D96B;
+	margin-top:285px;
+}
+
+i.green{
+	color:#449D44;
+}
+
+i.red{
+	color:#D1322E;
+}
+
+i.blue{
+	color: #008BFD;
+}
+
+i.orange{
+	color:#FF9326;
+}
+
+i.grey{
+	color: #C0C0C0;
+}
+
+i.purple{
+	color: #5362EC;
+}
+
+ul.circle li:nth-child(1) i.fa-circle{
+	color: #249CFF;
+}
+
+ul.circle li:nth-child(2) i.fa-circle{
+	color:#FF9326;
+}
+
+ul.circle li:nth-child(3) i.fa-circle{
+	color:#75C53A;
+}
+
+ul.circle li:nth-child(4) i.fa-circle{
+	color:#A466BB;
+}
+
+ul.circle li:nth-child(5) i.fa-circle{
+	color:#23BE8C;
+}
+
+ul.circle li:nth-child(6) i.fa-circle{
+	color:#FF5E62;
+}
+
+.up-ani,
+.down-ani{
+	width:auto;
+	line-height:6px;
+	position:relative;
+	top:-3px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Gallery Thumb -------------------------------------------------------------------- */
+
+.upload-img{
+	min-width:90px;
+	float:left;
+	text-align:center;
+	padding:5px;
+	margin:5px 15px 15px 0;
+}
+
+.upload-img.box{	
+	border:1px solid #DDDDDD;
+}
+
+.upload-img.box:hover{
+	background-color:#FCF8E3;
+}
+
+.upload-img.box img{
+	margin-bottom:5px;
+	height:40px;
+}
+
+.upload-img.box span.label{
+	display:inline-block;
+	margin-bottom:5px;
+	border-radius:0;
+}
+
+.upload-img span.glyphicon{
+	font-size:17px;
+	color:#999;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Code Mirror Editor --------------------------------------------------------------- */
+
+.CodeMirror{
+	height:600px;
+}
+
+.CodeMirror pre{
+	white-space:normal;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Others --------------------------------------------------------------------------- */
+
+h1 .label{
+	font-size:35px;
+	text-transform:uppercase;
+}
+
+h3 .label {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.members-area.container{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.members-area .list-group{
+	margin-bottom:0;
+}
+
+.members-area .list-group-item{
+	border-radius:0;
+}
+
+.members-area .list-group-item .label{
+	font-weight:normal;
+	font-size:14px;
+	padding:5px 6px;
+}
+
+.members-area fieldset {
+    background: none #fcfcfc;
+    border: 1px solid #ddd;
+    margin: 0 0 25px;
+    padding: 0 15px 5px;
+}
+
+.members-area legend {
+	color:#666;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0 0 10px;
+    padding: 7px 20px;
+    width: auto;
+}
+
+.members-area h1 {
+	color:#555555;
+	font-size: 26px;
+    margin: 10px 0 30px 0;
+	letter-spacing:-1px;
+}
+
+.members-area .btn{
+	border-radius:0;
+}
+
+.members-area .k-grid input[type="checkbox"]{
+	margin:0 !important;
+}
+
+img.img-hover {
+  	-webkit-transform: scale(1, 1);
+  	-webkit-transition-duration: 500ms;
+  	-webkit-transition-timing-function: ease-out;
+ 
+  	-moz-transform: scale(1, 1);
+  	-moz-transition-duration: 500ms;
+  	-moz-transition-timing-function: ease-out;
+ 
+  	-ms-transform: scale(1, 1);
+  	-ms-transition-duration: 500ms;
+  	-ms-transition-timing-function: ease-out;
+  	z-index:0;
+}
+
+img.img-hover:hover {
+  	-webkit-transform: scale(2.0, 2.0);
+  	-webkit-transition-duration: 500ms;
+  	-webkit-transition-timing-function: ease-out;
+ 
+  	-moz-transform: scale(2.0, 2.0);
+  	-moz-transition-duration: 500ms;
+  	-moz-transition-timing-function: ease-out;
+ 
+  	-ms-transform: scale(2.00, 2.00);
+  	-ms-transition-duration: 500ms;
+  	-ms-transition-timing-function: ease-out;
+	z-index:2;
+}
+
+.btn-groups.top{
+	margin-bottom:20px;
+}
+
+.resp-tabs-list.horizontal li.resp-tab-item {
+	border-bottom:0 !important;
+}
+
+
+.resp-tabs-list.horizontal li.resp-tab-item.resp-tab-active{
+	border-color: #0088dd #dedede #dedede #dedede;
+    border-style: solid;
+   	border-width: 2px 1px 0 1px;
+    color: #0088dd;
+}
+
+/* Social Media Settings ------------------------------------------------------------ */
+
+.callout{
+	border-width:1px 1px 1px 3px;
+	border-style: dashed dashed dashed solid;
+	margin:0 0 25px 0;
+	padding:10px;
+}
+
+.callout.facebook{
+	border-color:#1E4388;
+}
+
+.callout.twitter{
+	border-color:#27AAE0;
+}
+
+.callout.google-plus{
+	border-color:#D4492C;
+}
+
+.callout.youtube{
+	border-color:#EC232A;
+}
+
+.callout.flickr{
+	border-color:#FF0084;
+}
+
+.callout .social{
+	margin-bottom:20px;
+	font-size:26px;
+	letter-spacing:-1px;
+}
+
+.callout .social > div {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-weight: 700;
+	vertical-align:middle;
+	margin-top:-6px;
+}
+
+.callout .social > div.facebook {
+	background-color: #1E4388;
+}
+
+.callout .social > div.twitter {
+	background-color: #27AAE0;
+}
+
+.callout .social > div.google-plus {
+	background-color: #D4492C;
+}
+
+.callout .social > div.youtube {
+	background-color: #EC232A;
+}
+
+.callout .social > div.flickr {
+	background-color: #FF0084;
+}
+
+.callout .social > div i{
+	font-size: 20px;
+	color: #FFF;
+	line-height: 40px;
+}
+
+.callout table td{
+	vertical-align:middle !important;
+}
+
+.callout table td .form-control{
+	width:auto;
+	display:inline-block;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Resp Tab ------------------------------------------------------------------------- */
+
+ul.resp-tabs-list > span > a{
+	text-decoration:none !important;
+}
+
+ul li.resp-tab-item.resp-tab-active i{
+	color:#0088DD;
+}
+
+ul li.resp-tab-item.resp-tab-active{
+	border-width:1px 0 1px 2px;
+	border-style:solid;
+	border-color:#dedede;
+	border-left-color:#0088DD;
+	color:#0088DD;
+}
+
+ul.resp-tabs-list li{
+	color: #555555;
+	background-color:#F5F5F5;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* BS Customization ----------------------------------------------------------------- */
+
+.no-radius{
+	border-radius:0;
+}
+
+.text-middle{
+	vertical-align:middle !important;
+}
+
+.text-bottom{
+	vertical-align:bottom;
+}
+
+.progress{
+	margin-top:29px;
+}
+
+.dropdown-menu > li > a{
+	text-align:left;
+}
+
+.form-control.input-order{
+	font-size:12px !important;
+	height:auto;
+	width:20px;
+	padding:5px;
+	text-align:center;
+}
+
+.btn-group .btn{
+	font-size:13px;
+	border-radius:2px;
+}
+
+.btn-group .dropdown-menu{
+	border-radius:2px;
+	z-index:9;
+}
+
+.btn-group .dropdown-menu i{
+	vertical-align:top;
+}
+
+.btn-group .dropdown-menu i.fa-spin{
+	vertical-align:middle;
+}
+
+.input-group.small{
+	width:70%;
+}
+
+.input-group.x-small{
+	width:50%;
+}
+
+.input-group-addon{
+	border-radius:0;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* JQuery UI Customization ---------------------------------------------------------- */
+
+.ui-widget {
+	font-size:14px;
+}
+
+.ui-widget.info{
+	padding:0 10px 0 5px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.ui-widget.info .ui-corner-all{
+	padding:2px; 
+	margin-bottom:1px;
+	overflow:hidden; 
+}
+
+.ui-dialog iframe{
+	height:480px;
+}
+
+.ui-dialog a.btn{
+	color:#FFF;
+}
+
+.ui-combobox{
+	position: relative;
+	display: inline-block;
+	margin:0 40px 0 0;
+}
+
+.ui-combobox-toggle{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	padding: 0;
+	*height: 1.7em;
+	*top: 0.1em;
+}
+
+.ui-combobox-input {
+	margin: 0;
+	padding: 0.3em;
+}
+
+.ui-autocomplete-loading{ 
+	background-image: url("../images/loader/ui-anim_basic_16x16.gif");
+	background-position:right center;
+	background-repeat: no-repeat;
+}
+
+form .ui-combobox{
+	display:block;
+	margin:0;
+}
+
+form .ui-combobox .ui-combobox-toggle{
+	margin-left:-30px;
+	border-radius:0;
+}
+
+form .ui-combobox-input{
+	width:100%;
+	border-radius:0;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Kendo UI Customization ----------------------------------------------------------- */
+
+.k-tabstrip *{
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important;
+	-webkit-box-sizing:border-box !important;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* ********************************************************************************** */
+
+
+/* Media Queries -------------------------------------------------------------------- */
+
+@media (min-width: 1220px) {
+	
+}
+
+/**************************************************/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.welcome-panel figure{
+	text-align:center;
+}
+
+.welcome-panel figure i{
+	width:100%;
+}
+
+}
+
+/**************************************************/
+@media (max-width: 767px) {
+
+.welcome-panel figure{
+	text-align:center;
+}
+
+.welcome-panel figure i{
+	width:100%;
+}
+
+.text-right.left{
+	text-align:left;
+}
+
+}
+
+/**************************************************/
+@media (max-width: 600px) {
+
+}
+
+/**************************************************/
+@media (max-width: 480px) {
+
+}
+
+/**************************************************/
+@media (max-width: 360px) {
+	
+}
+
+
+/* ___________________________________________________________________________________
+   
+   New CSS used by Developer
+   ___________________________________________________________________________________ */
+

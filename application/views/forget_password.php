@@ -18,7 +18,7 @@
           content="Demo - Realestate CMS, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
     <meta name="description"
           content="Demo - Realestate CMS - A Commercial CMS powered by Eicrasoft Ltd, jQuery and 960grid">
-    <title>Get New Password</title>
+    <title>Land|GIS</title>
     <script type=""
             src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
     <script type="" src="../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
@@ -107,12 +107,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-5 user-links">
-                        Welcome to LandGIS | <a href="<?php echo(base_url()); ?>login/user_login">Login</a> | <a
-                            href="<?php echo(base_url()); ?>login/user_role">Register</a></div>
+                        Welcome to LandGIS | <a href="<?php echo(base_url()); ?>landing/user_login">Login</a> | <a
+                            href="<?php echo(base_url()); ?>landing/user_role">Register</a></div>
 
                     <div class="col-xs-7 top-links">
-                        <a href="<?php echo(base_url()); ?>login/user_login">My Account</a> |
-                        <a href="<?php echo(base_url()); ?>login/contact_us">Contact us</a>
+                        <a href="<?php echo(base_url()); ?>landing/user_login">My Account</a> |
+                        <a href="<?php echo(base_url()); ?>landing/contact_us">Contact us</a>
 
                     
                         <script type="text/javascript">
@@ -192,6 +192,34 @@
                             });
                         </script>    
 
+                        <style>
+             .ts-bt{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background:#74A442 ;
+    padding: 0 15px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing:1px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #2a9341;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.ts-bt:hover, .ts-bt:focus{
+    background: #458218;
+    color: #74A442;
+}
+
+            </style>
+
                     </div>
                 </div>
             </div>
@@ -207,15 +235,14 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5">
-                    <span class="listing-add"><a href="<?php echo(base_url()); ?>login/user_role"><span
-                                class="glyphicon glyphicon-plus-sign"></span>Create Account</a></span>
-                        </br>
-                        <span><a style="font-size:15px;font-weight: 700"class="pull-right link-button " href="<?php echo(base_url()); ?>login/user_login"> Login</a></span>
-                    </div>
+                     </br>
+                    <span style="margin-left:230px"class="navbar-form"><a href="<?php echo (base_url()); ?>landing/user_register" class="ts-bt bt-login"><i class="fa fa-user"></i>Register</a></span>
+                    <span style="margin-right:20px"class="navbar-form"><a href="<?php echo (base_url()); ?>landing/user_login" class="ts-bt bt-login"><i class="fa fa-sign-in"></i>LOGIN</a></span>
+    
                 </div>
             </div>
         </div>
+
     </header>
     <!-- Header End -->
     <!-- Top Navigation Start-->

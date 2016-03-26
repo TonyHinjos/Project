@@ -1,0 +1,222 @@
+
+html, body {
+    background: #ecebec none repeat scroll 0 0 !important;
+}
+.panel-default > .panel-heading {
+  background-color: #fefefe;
+  border-bottom: 1px solid #fafafa !important;
+}
+
+.btn-default {
+background-color:transparent !important;
+}
+
+.table-card-box > tbody > tr > td, .table-card-box > tbody > tr > th, .table-card-box > tfoot > tr > td, .table-card-box > tfoot > tr > th, .table-card-box > thead > tr > td, .table-card-box > thead > tr > th {
+  padding: 8px 0;
+  border-top: 1px solid #f3f3f3;
+  vertical-align: top;
+}
+
+.right {
+  text-align: right;
+}
+
+.list-group-forms .list-group-item:first-child {
+  padding: 5px 10px;
+}
+
+.list-group-forms .list-group-item{
+  padding: 5px 10px;
+  background: #fdfdfd;
+}
+
+.card-box {
+  padding: 2px;
+  border: 1px solid rgba(54, 64, 74, 0.08);
+  -webkit-border-radius: 2px;
+  border-radius: 0px;
+  -moz-border-radius: 2px;
+  background-clip: padding-box;
+  margin-bottom: 5px;
+  background-color: #fff;
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-box-light-orange {
+  background-color: #fffed2;
+}
+
+.img-circle {
+ border: 1px solid #f2f2f2;
+}
+
+#topnav .topbar-main {
+   background-color: #535c69;
+}
+
+#topnav .topbar-main .logo {
+  text-transform: uppercase;
+}
+
+/*Application form, form-elements and form preview */
+
+.form-bordered .form-group {
+   margin: 0;
+   padding: 15px 0;
+   border-top: 1px solid #dedede;}
+
+.form-bordered .form-group:first-child {
+   border-top: 0;
+}
+
+.form-striped .form-group {
+   margin: 0;
+   padding: 15px 0;
+}
+
+.form-striped .form-group:nth-child(even) {
+   background: #fcfcfc;
+}
+
+.form-inline .form-group {
+   margin-right: 20px;
+}
+
+.form-inline .checkbox {
+   margin-right: 20px;
+}
+
+.form-control {
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   height: auto;
+   background-color: #fbfbfb;
+   border: 1px solid #dedede;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   font-size: 13px;
+}
+
+.form-control:focus {
+   border-color: #999;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   -moz-box-shadow: 3px 3px 0 rgba(12,12,12,0.05);
+   -webkit-box-shadow: 3px 3px 0 rgba(12,12,12,0.05);
+   box-shadow: 3px 3px 0 rgba(12,12,12,0.05);
+}
+
+.label {
+    padding: 0.5em 0.6em 0.3em;
+}
+
+.p-l-0 {
+  padding-left:0px !important;
+}
+
+.p-r-0 {
+  padding-right:0px !important;
+}
+
+.form-horizontal .control-label {
+  padding-top:0;
+}
+
+.datepicker {
+  font-size: 30px;
+  padding:0;
+  cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    font-weight: normal!important;
+    max-width: 100%;
+}
+
+.total_payment p {
+  background: #ececec;
+  color:##00b19d;
+  margin: 0;
+  text-align: right;
+  padding: 5px 9px 1px 0;
+  border-top: #dedede solid 1px;
+  border-bottom: #dedede solid 2px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+.li_pagination {
+  border-top: #f5f5f5 solid 1px;
+  background: #f9f9f9;
+}
+
+var {
+  font-style: normal !important;
+}
+
+.panel-footer {
+  border-top:1px solid #f5f5f5;
+}
+
+
+.alert-info.alert-xs {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 4px 8px;
+    margin-bottom: 0px;
+}
+
+.table-responsive {
+ overflow-x: visible!important;
+}
+
+
+tr.alt {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+
+#machform_review_table tr:hover td{
+    background: #f6f9f6 none repeat scroll 0 0;
+}
+
+
+
+/*alerts and errors*/
+
+.alert-info {
+    color:#4cae4c;
+}
+
+.alert-danger {
+    color: #c12522;
+}
+
+.col-sm-8 p.error {
+    clear: both;
+    color: red;
+    font-size: 13px;
+    margin: 7px 0 0 !important;
+    font-weight: normal;
+}
+
+#error_message {
+    background: #ffdede none repeat scroll 0 0;
+    border: 1px solid red;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
+    text-align: center;
+    border-radius:2px;
+    margin: 10px;
+}

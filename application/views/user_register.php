@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
-<html dir="ltr" lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     <link rel="shortcut icon"
-          href="<?php base_url(); ?>../assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
+          href="<?php base_url(); ?>assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
 <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700'
           rel='stylesheet' type='text/css'>
@@ -18,52 +18,61 @@
           content="Demo - Realestate CMS, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
     <meta name="description"
           content="LandSerachGIS - A Commercial Land GIS powered by tony, jQuery and 960grid">
-    <!--<title><?php if (!empty($title)) {echo($title); } ?></title>-->
+    
 
-    <title>User Registration</title>
+    <title>Land|GIS</title>
+    
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
-    <script type="" src="../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
+<script type=""
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery-2.1.0.min.js"></script>
+
+            <script type=""
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.validate.min.js"></script>
+    <script type="" src="assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
+
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/js/slicker.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/js/common.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/js/slicker.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/js/common.js"></script>
    
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
         media="screen"
         rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
         media="screen" rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
         media="screen" rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/template.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/template.css"
           media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/general.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/general.css"
           media="screen" rel="stylesheet"
           type="text/css">
 
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
-     <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
-     <script type="" src="<?php base_url(); ?>../assets/application/modules/Portfolio/js/uploader.js"></script>
+            src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
+     <script type="" src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
+     <script type="" src="<?php base_url(); ?>assets/application/modules/Portfolio/js/uploader.js"></script>
 
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
+    <link href="<?php base_url(); ?>assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
+    <link href="<?php base_url(); ?>assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/pagination.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/pagination.css"
           media="screen" rel="stylesheet"
           type="text/css">       
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
       rel="stylesheet"
       type="text/css">
+
+
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -99,7 +108,7 @@ $( document ).tooltip({
 
 <script type="text/javascript">
     $(document).ready(function () {
-        logOut('a.topbar_logout_btn', '<img src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/loader/ajax-loader-email.gif" />', '', 'Sign in');
+        logOut('a.topbar_logout_btn', '<img src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/loader/ajax-loader-email.gif" />', '', 'Sign in');
     });
 </script>
 
@@ -110,12 +119,12 @@ $( document ).tooltip({
             <div class="container">
                 <div class="row">
                     <div class="col-xs-5 user-links">
-                        Welcome to LandGIS | <a href="<?php echo(base_url()); ?>login/user_login">Login</a> | <a
+                        Welcome to LandGIS | <a href="<?php echo(base_url()); ?>user_login">Login</a> | <a
                             href="<?php base_url(); ?>">Register</a></div>
 
                     <div class="col-xs-7 top-links">
-                        <a href="<?php echo(base_url()); ?>login/user_login">My Account</a> |
-                        <a href="<?php echo(base_url()); ?>login/contact_us">Contact us</a>
+                        <a href="<?php echo(base_url()); ?>user_login">My Account</a> |
+                        <a href="<?php echo(base_url()); ?>landing/contact_us">Contact us</a>
 
                     
                         <script type="text/javascript">
@@ -193,7 +202,37 @@ $( document ).tooltip({
                                     $(".dropdown img.flag").toggleClass("flagvisibility");
                                 });
                             });
-                        </script>    
+                        </script>
+                  <style>
+             .ts-bt{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background:#74A442 ;
+    padding: 0 15px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing:1px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #2a9341;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.ts-bt:hover, .ts-bt:focus{
+    background: #458218;
+    color: #74A442;
+}
+
+            </style>
+
+
+
 
                     </div>
                 </div>
@@ -205,17 +244,15 @@ $( document ).tooltip({
                     <div class="col-md-7">
                         <div class="logo">
                             <a href="<?php echo(base_url()); ?>"><img
-                                    src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/logo.png"
+                                    src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/logo.png"
                                     alt="Realestate CMS" title="LandSearchGIS" border="0"></a>
                         </div>
                     </div>
 
-                    <div class="col-md-5">
-                    <span class="listing-add"><a href="<?php echo(base_url()); ?>login/user_role"><span
-                                class="glyphicon glyphicon-plus-sign"></span>Create Account</a></span>
-                        </br>
-                        <span><a style="font-size:15px;font-weight: 700"class="pull-right link-button " href="<?php echo(base_url()); ?>login/user_login"> Login</a></span>
-                    </div>
+                    </br>
+                    <span style="margin-left:230px"class="navbar-form"><a href="<?php echo (base_url()); ?>user_register" class="ts-bt bt-login"><i class="fa fa-user"></i>Register</a></span>
+                    <span style="margin-right:20px"class="navbar-form"><a href="<?php echo (base_url()); ?>user_login" class="ts-bt bt-login"><i class="fa fa-sign-in"></i>LOGIN</a></span>
+    
                 </div>
             </div>
         </div>
@@ -318,83 +355,83 @@ $( document ).tooltip({
                     });
 
 
-                    $('a.add_user_btn').click(function () {
-                        var formData = commonGetFormData(settingObj.form_action.form_id, settingObj.form_action.hasTinyMCE);
-                        if (!formData.role_id) {
-                            formData.role_id = '104';
-                        }
-                        $.ajax({
-                            url: "/Members/Frontend/register",
-                            type: 'POST',
-                            data: formData,
-                            beforeSend: function () {
-                                commonOpenLoaderDialog(settingObj);
-                                commonRemoveFormError(settingObj);
-                            },
-                            success: function (response) {
-                                //alert(response);
-                                try {
-                                    var json_arr = eval("(" + response + ")");
-                                    commonRefreshCaptcha(json_arr, 'span');
+                    // $('a.add_user_btn').click(function () {
+                    //     var formData = commonGetFormData(settingObj.form_action.form_id, settingObj.form_action.hasTinyMCE);
+                    //     if (!formData.role_id) {
+                    //         formData.role_id = '';
+                    //     }
+                    //     $.ajax({
+                    //         url: "",
+                    //         type: 'POST',
+                    //         data: formData,
+                    //         beforeSend: function () {
+                    //             commonOpenLoaderDialog(settingObj);
+                    //             commonRemoveFormError(settingObj);
+                    //         },
+                    //         success: function (response) {
+                    //             //alert(response);
+                    //             try {
+                    //                 var json_arr = eval("(" + response + ")");
+                    //                 commonRefreshCaptcha(json_arr, 'span');
 
-                                    if (json_arr.status == 'ok') {
-                                        if (json_arr.package_msg == 'ok') {
-                                            var package_name = json_arr.package_info[0].field_value;
-                                            var package_price = parseFloat(json_arr.package_info[1].field_value);
-                                            if (package_price != 0) {
-                                                if (json_arr.gateway_info) {
-                                                    gateWayList(json_arr.gateway_info, json_arr.member_id);
-                                                }
-                                                //document.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=demo@script4realestate.com&item_name="+package_name+"&item_number=1&amount="+package_price+"&no_shipping=0&no_note=1&currency_code=USD&bn=PP%2dBuyNowBF&charset=UTF%2d8 target=_blank";
-                                            }
+                    //                 if (json_arr.status == 'ok') {
+                    //                     if (json_arr.package_msg == 'ok') {
+                    //                         var package_name = json_arr.package_info[0].field_value;
+                    //                         var package_price = parseFloat(json_arr.package_info[1].field_value);
+                    //                         if (package_price != 0) {
+                    //                             if (json_arr.gateway_info) {
+                    //                                 gateWayList(json_arr.gateway_info, json_arr.member_id);
+                    //                             }
+                    //                             //document.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=demo@script4realestate.com&item_name="+package_name+"&item_number=1&amount="+package_price+"&no_shipping=0&no_note=1&currency_code=USD&bn=PP%2dBuyNowBF&charset=UTF%2d8 target=_blank";
+                    //                         }
 
-                                            commonCloseLoaderDialog(settingObj);
-                                        }
-                                        else if (json_arr.package_msg == 'invoice') {
-                                            document.location.href = "http://demo.script4realestate.com/Create-Invoice";
-                                        }
-                                        else {
-                                            commonCloseLoaderDialog(settingObj);
-                                        }
-                                        $('#actionMessage').html(succMsgDesign(json_arr.msg));
-                                        commonResetFormFields(settingObj);
-                                        commonGoMessage(settingObj);
-                                    }
-                                    else if (json_arr.status == 'errV') {
-                                        commonCloseLoaderDialog(settingObj);
-                                        $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
+                    //                         commonCloseLoaderDialog(settingObj);
+                    //                     }
+                    //                     else if (json_arr.package_msg == 'invoice') {
+                    //                         document.location.href = "http://demo.script4realestate.com/Create-Invoice";
+                    //                     }
+                    //                     else {
+                    //                         commonCloseLoaderDialog(settingObj);
+                    //                     }
+                    //                     $('#actionMessage').html(succMsgDesign(json_arr.msg));
+                    //                     commonResetFormFields(settingObj);
+                    //                     commonGoMessage(settingObj);
+                    //                 }
+                    //                 else if (json_arr.status == 'errV') {
+                    //                     commonCloseLoaderDialog(settingObj);
+                    //                     $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
 
-                                        for (var i = 0; i < json_arr.msg.length; i++) {
-                                            focusFirst(json_arr.msg[i].key, json_arr.msg[i].value, i);
-                                            commonAddFormError(json_arr.msg[i].key, json_arr.msg[i].value);
-                                        }
-                                    }
-                                    else if (json_arr.status == 'errP') {
-                                        commonCloseLoaderDialog(settingObj);
-                                        $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
-                                        commonAddFormError('confirmPassword', json_arr.msg);
-                                    }
-                                    else {
-                                        commonCloseLoaderDialog(settingObj);
-                                        $('#actionMessage').html(errMsgDesign(json_arr.msg));
-                                        commonGoMessage(settingObj);
-                                    }
-                                }
-                                catch (error) {
-                                    commonCloseLoaderDialog(settingObj);
-                                    var error_arr = [error, response];
-                                    var msg = commonErrMsgException(error_arr);
-                                    $('#actionMessage').html(errMsgDesign(msg));
-                                    commonGoMessage(settingObj);
-                                }
-                            },
-                            error: function (xhr, status, error) {
-                                commonCloseLoaderDialog(settingObj);
-                                var msg = "Error! " + xhr.status + " " + error;
-                                $('#actionMessage').html(errMsgDesign(msg));
-                            }
-                        });
-                    });
+                    //                     for (var i = 0; i < json_arr.msg.length; i++) {
+                    //                         focusFirst(json_arr.msg[i].key, json_arr.msg[i].value, i);
+                    //                         commonAddFormError(json_arr.msg[i].key, json_arr.msg[i].value);
+                    //                     }
+                    //                 }
+                    //                 else if (json_arr.status == 'errP') {
+                    //                     commonCloseLoaderDialog(settingObj);
+                    //                     $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
+                    //                     commonAddFormError('confirmPassword', json_arr.msg);
+                    //                 }
+                    //                 else {
+                    //                     commonCloseLoaderDialog(settingObj);
+                    //                     $('#actionMessage').html(errMsgDesign(json_arr.msg));
+                    //                     commonGoMessage(settingObj);
+                    //                 }
+                    //             }
+                    //             catch (error) {
+                    //                 commonCloseLoaderDialog(settingObj);
+                    //                 var error_arr = [error, response];
+                    //                 var msg = commonErrMsgException(error_arr);
+                    //                 $('#actionMessage').html(errMsgDesign(msg));
+                    //                 commonGoMessage(settingObj);
+                    //             }
+                    //         },
+                    //         error: function (xhr, status, error) {
+                    //             commonCloseLoaderDialog(settingObj);
+                    //             var msg = "Error! " + xhr.status + " " + error;
+                    //             $('#actionMessage').html(errMsgDesign(msg));
+                    //         }
+                    //     });
+                    // });
 
                 });
 
@@ -556,7 +593,7 @@ $( document ).tooltip({
 
             </script>
 
-           <script type="text/javascript" src="<?php base_url(); ?>../assets/js/jquery.min.js"></script>
+          
            <script>
            $(function() {         
             $("#json-one").change(function() {
@@ -644,10 +681,10 @@ $( document ).tooltip({
                             vals = data.marsabitcounty.split(",");
                             break;
                             case '26':
-                            vals = data.merucounty.split(",");
+                            vals = data.migoricounty.split(",");
                             break;
                             case '27':
-                            vals = data.migoricounty.split(",");
+                            vals = data.merucounty.split(",");
                             break;
                             case '28':
                             vals = data.mombasacounty.split(",");
@@ -727,6 +764,122 @@ $( document ).tooltip({
     
 </script>
 
+<script>
+    $.validator.setDefaults({
+        submitHandler: function() {
+            alert("submitted!");
+        }
+    });
+    
+
+    $(document).ready(function() {
+        // validate the comment form when it is submitted
+
+        // validate signup form on keyup and submit
+        $("#signup").validate({
+            rules: {
+                userrole:"required",
+                gender:"required",
+                firstname: "required",
+                 surname: "required",
+                lastname: "required",
+                 email: {
+                    required: true,
+                    email: true
+                },
+                 password: {
+                    required: true,
+                    rangelength: [8,16]
+                },
+                confirm_password: {
+                    
+                    equalTo: "#password"
+                },
+                 mobileno:{
+                    required: true,
+                    digits: true,
+                    maxlength: 10
+
+                 },
+                 nationalid: {
+
+                    required: true,
+                    digits: true,
+                    maxlength: 8
+                },
+                 county: "required",
+                 ward: "required",
+                 url: "required"
+                    
+            },
+            messages: {
+                userrole: "Please select user role",
+                gender: "please select your gender",
+                firstname: "Please enter your firstname",
+                surname: "please enter your surname",
+                lastname: "Please enter your lastname",
+                 email:{
+                      required: "Please enter an email address",
+                      email: "Please enter a valid email address"
+                        
+               },
+                  password: {
+                    required: "Please provide a password",
+                    rangelength: "Your password must be between 8 and 16 characters long"
+                },
+                confirm_password: {
+                    equalTo: "Please enter the same password as above"
+                },
+
+
+                 mobileno: {
+                    required: "Please provide your mobile number",
+                    digits: "You must put only digits ",
+                    maxlength: "Your mobile number must be at most 10 characters long"
+                },
+                
+                 nationalid: {
+
+                    required: "please provide your national id number",
+                    digits: "You must put only digits",
+                    maxlength: "Your id number must be at most 8 characters long"
+                },
+                 county: "Please select your county",
+                 ward: "Please select your ward",
+                  url: "Please provide a valid web address"
+
+            }
+        });
+
+        // propose username by combining first- and lastname
+        // $("#username").focus(function() {
+        //     var firstname = $("#firstname").val();
+        //     var lastname = $("#lastname").val();
+        //     if (firstname && lastname && !this.value) {
+        //         this.value = firstname + "." + lastname;
+        //     }
+        // });
+
+    });
+    </script>
+
+    <style>
+   
+   #signup span.error {
+font-size: 0.8em;
+color: #F00;
+font-weight: bold;
+display: block;
+margin-left: 215px;
+}
+#signup input.error, #signup select.error {
+background: #FFA9B8;
+border: 1px solid red;
+}
+    
+    </style>
+
+    
 
 
             <div class="mod">
@@ -740,7 +893,45 @@ $( document ).tooltip({
 
                 <div id="memberFormDiv">
 
-                    <form name="MemberForm" id="MemberForm">
+                    <form role="form" action="<?php echo(base_url()); ?>user_register/user_create_account" method="post" id="MemberForm" id="signup">
+                    <fieldset>
+                    <fieldset>
+                        <legend >Select User Role:&nbsp;<span class="members-star star_class">*</span></legend>
+                        <div id="actionMessage">&nbsp;</div>
+
+                        <div class="type" >
+                            <label><input required="" type="radio" name="userrole" id="userrole" value="surveyor" size="1" 
+                                          class="ui-widget-content ui-corner-all" 
+                                          title="Name of User Role">Surveyor</label><br><label><input required="" type="radio"
+                                                                                                      name="userrole"
+                                                                                                      id="userrole"
+                                                                                                      value="agent"
+                                                                                                      size="1"
+                                                                                                      class="ui-widget-content ui-corner-all"
+                                                                                                      
+                                                                                                      title="Name of User Role">Agent</label><br><label><input
+                                   required="" type="radio" name="userrole" id="userrole" value="landowner" size="1"
+                                    class="ui-widget-content ui-corner-all"
+                                    title="Name of User Role">LandOwner</label ><br><label><input required="" type="radio"
+                                                                                                 name="userrole"
+                                                                                                 id="userrole"
+                                                                                                 value="landbuyer" size="1"
+                                                                                                 class="ui-widget-content ui-corner-all"
+                                                                                                 title="Name of User Role">LandBuyer
+                            </label><br><label><input required=""
+                                    type="radio" name="userrole" id="userrole" value="advocate" size="1"
+                                    class="ui-widget-content ui-corner-all" title="Name of User Role">Advocate</label>
+                        </div>
+                        <span for="userrole"></span>
+
+                        
+                        <div class="clear">&nbsp;</div>
+                    </fieldset>
+
+
+
+
+
                         <fieldset>
                             <legend>Member Information</legend>
 
@@ -748,23 +939,23 @@ $( document ).tooltip({
 
                                 <div class="form-label-container">
                                     <div class="label_class label_class" style="">
-                                        Title:&nbsp;
+                                        Gender:&nbsp;
                                     </div>
                                 </div>
 
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<select  name="title" id="title" title="Enter Title" size="1" class="form-control" admin="1"
-       frontend="1">
-<option selected value="4">Please Select</option>
-    <option value="1">Mr</option>
-    <option value="2">Mrs</option>
-    <option value="3">Miss</option>
+<select required="" name="gender" id="gender" title="Enter Gender" size="1"  class="form-control" >
+<option required="" selected value="4">Please Select</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    
 
 
        </select></span><br/>
-                                        <span class="input-errors" id="title_err"></span>
+                               <span class="input-errors" for="gender"></span>
+                                        
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
@@ -778,9 +969,23 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" name="firstName" id="firstName" value="" size="35" title="Type Your First Name" class="form-control"
-       admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="firstName_err"></span>
+<input required="" type="text" name="firstname" id="firstname" value="" size="35" title="Type Your First Name"class="form-control" ></span><br/>   <span class="input-errors" for="firstname"></span>
+                                        
+                                    </div>
+                                    <div class="form-field-info"></div>
+                                </div>
+
+                                <div class="form-label-container">
+                                    <div class="label_class label_class" style="">
+                                        Enter Surname:<span class="star_class star_class" style="">*</span>&nbsp;
+                                    </div>
+                                </div>
+
+                                <div class="form-field-container">
+                                    <div class="form-field">
+                                              <span class="ui-widget">
+<input required="" type="text" name="surname" id="surname" value="" size="35" title="Enter Your Surname" class="form-control" ></span><br/>
+                              <span class="input-errors" for="surname"></span>           
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
@@ -794,25 +999,9 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" name="lastName" id="lastName" value="" size="35" title="Enter Your Last Name" class="form-control"
-       admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="lastName_err"></span>
-                                    </div>
-                                    <div class="form-field-info"></div>
-                                </div>
-
-                                <div class="form-label-container">
-                                    <div class="label_class label_class" style="">
-                                        Company Name:&nbsp;
-                                    </div>
-                                </div>
-
-                                <div class="form-field-container">
-                                    <div class="form-field">
-                                              <span class="ui-widget">
-<input type="text" name="companyName" id="companyName" value="" size="35" title="Type your Company Name"
-       class="form-control" admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="companyName_err"></span>
+<input required="" type="text" name="lastname" id="lastname" value="" size="35" title="Type your Last Name"
+       class="form-control" ></span><br/>
+                                       <span class="input-errors" for="lastname"></span>  
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
@@ -834,11 +1023,10 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" name="username" id="username" value="" size="35"
+<input required="" type="email" name="email" id="email" value="" size="35"
        title="Type your Email Address correct. This will consider as your login ID"
-       info="Type your Email Address correct. This will consider as your login ID" class="form-control" admin="1"
-       frontend="1"></span><br/>
-                                        <span class="input-errors" id="username_err"></span>
+       info="Type your Email Address correct. This will consider as your login ID" class="form-control" class="required"></span><br/>  <span class="input-errors" for="email"></span>
+                                        
                                     </div>
                                     <div class="form-field-info">
                                         <div class="ui-widget ui-helper-clearfix info">
@@ -858,9 +1046,8 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="password" name="password" id="password" value="" size="35" class="form-control" admin="1"
-       frontend="1"></span><br/>
-                                        <span class="input-errors" id="password_err"></span>
+<input required="" type="password" name="password" id="password" value="" size="35" class="form-control" ></span><br/>
+                                       <span class="input-errors" for="password"></span>  
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
@@ -874,9 +1061,8 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="password" name="confirmPassword" id="confirmPassword" value="" size="35" class="form-control" admin="1"
-       frontend="1"></span><br/>
-                                        <span class="input-errors" id="confirmPassword_err"></span>
+<input required="" type="password" name="confirm_Password" id="confirm_password" value="" size="35" class="form-control"></span><br/> <span class="input-errors" for="confirm_password"></span>
+                                       
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
@@ -888,50 +1074,35 @@ $( document ).tooltip({
 
                             <div>
 
+                               
+
                                 <div class="form-label-container">
                                     <div class="label_class label_class" style="">
-                                        Your Address:<span class="star_class star_class" style="">*</span>&nbsp;
+                                        Your Mobile:<span class="star_class star_class" style="">*</span>&nbsp;
                                     </div>
                                 </div>
 
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<textarea name="address" id="address" title="Please Type your Address" cols="30" rows="3" class="editor form-control"
-          admin="1" frontend="1"></textarea></span><br/>
-                                        <span class="input-errors" id="address_err"></span>
+<input required="" type="text" name="mobile" id="mobile" value="" size="35" class="form-control" title="mobile number"></span><br/> <span class="input-errors" id="mobile"></span>
+                                        
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
 
                                 <div class="form-label-container">
                                     <div class="label_class label_class" style="">
-                                        Your Mobile:&nbsp;
+                                        Your National Id:<span class="star_class star_class" style="">*</span>&nbsp;
                                     </div>
                                 </div>
 
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" name="mobile" id="mobile" value="" size="35" class="form-control" title="mobileNo" admin="1"
-       frontend="1"></span><br/>
-                                        <span class="input-errors" id="mobile_err"></span>
-                                    </div>
-                                    <div class="form-field-info"></div>
-                                </div>
-
-                                <div class="form-label-container">
-                                    <div class="label_class label_class" style="">
-                                        Your postal /Zip Code:<span class="star_class star_class" style="">*</span>&nbsp;
-                                    </div>
-                                </div>
-
-                                <div class="form-field-container">
-                                    <div class="form-field">
-                                              <span class="ui-widget">
-<input type="text" name="postalCode" id="postalCode" value="" size="35" title="Enter postal / Zip Code "
-       class="form-control" admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="postalCode_err"></span>
+<input required="" type="text" name="nationalid" id="nationalid" value="" size="35" title="Enter National Id Number "
+       class="form-control" ></span><br/> <span class="input-errors" for="nationalid"></span>
+                                        
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
@@ -945,8 +1116,8 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<select name="country" id="json-one"id="country" size="1" style="" class="register_select_country form-control"
-        title="Name of Your County" admin="1" frontend="1">
+<select required="" name="county" id="json-one"id="county" size="1" style="" class="register_select_country form-control"
+        title="Name of Your County" >
     <option selected value="48">Please Select</option>
     <option value="1">Baringo County</option>
     <option value="2">Bomet County</option>
@@ -972,9 +1143,9 @@ $( document ).tooltip({
     <option value="22">Machakos County</option>
     <option value="23">Makueni County</option>
     <option value="24">Mandera County</option>
-    <option value="25">Meru County</option>
+    <option value="25">Marsabit County</option>
     <option value="26">Migori County</option>
-    <option value="27">Marsabit County</option>
+    <option value="27">Meru County</option>
     <option value="28">Mombasa County</option>
     <option value="29">Muranga County</option>
     <option value="30">Nairobi County</option>
@@ -996,15 +1167,15 @@ $( document ).tooltip({
     <option value="46">Wajir County</option>
     <option value="47">West Pokot County</option>
     
-</select></span><br/>
-                                        <span class="input-errors" id="country_err"></span>
+</select></span><br/> <span class="input-errors" for="county"></span>
+                                        
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
 
                                 <div class="form-label-container">
                                     <div class="label_class label_class" style="">
-                                        Type Your Ward:<span class="star_class star_class" style="">*</span>&nbsp;
+                                        Select Your Ward:<span class="star_class star_class" style="">*</span>&nbsp;
                                         
                                     </div>
                                 </div>
@@ -1013,71 +1184,16 @@ $( document ).tooltip({
       <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<select name="state" id="json-two"id="state" size="1" style="" class="register_select_state form-control"
-        title="Name of Your Ward" admin="1" frontend="1">
+<select required="" name="ward" id="json-two"id="ward" size="1" style="" class="register_select_state form-control"
+        title="Name of Your Ward" >
         <option>Please choose from above</option>
-</select></span><br/>
-                                        <span class="input-errors" id="state_err"></span>
+</select></span><br/> <span class="input-errors" for="ward"></span>
+                                        
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
 
-                               <!-- <div class="form-field-container">
-                                    <div class="form-field">
-                                              <span class="ui-widget">
-<input type="text" name="state" id="state" value="" size="35" class="register_select_state form-control"
-       title="Name of your Ward" admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="state_err"></span>
-                                    </div>
-                                    <div class="form-field-info"></div>
-                                </div>-->
-
-                               <!--<div class="form-label-container">
-                                    <div class="label_class label_class" style="">
-                                        Your City/County:<span class="star_class star_class" style="">*</span>&nbsp;
-                                    </div>
-                                </div>
-
-                                <div class="form-field-container">
-                                    <div class="form-field">
-                                              <span class="ui-widget">
-<input type="text" name="city" id="city" value="" size="35" class="form-control" title="Name of your City or County"
-       admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="city_err"></span>
-                                    </div>
-                                    <div class="form-field-info"></div>
-                                </div>-->
-
-                                <!--<div class="form-label-container">
-                                    <div class="label_class label_class" style="">
-                                        Your Telephone&nbsp;
-                                    </div>
-                                </div>
-
-                                <div class="form-field-container">
-                                    <div class="form-field">
-                                              <span class="ui-widget">
-<input type="text" name="phone" id="phone" value="" size="35" title="phone" class="form-control" admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="phone_err"></span>
-                                    </div>
-                                    <div class="form-field-info"></div>
-                                </div>-->
-
-                               <!-- <div class="form-label-container">
-                                    <div class="label_class label_class" style="">
-                                        Your Fax:&nbsp;
-                                    </div>
-                                </div>
-
-                                <div class="form-field-container">
-                                    <div class="form-field">
-                                              <span class="ui-widget">
-<input type="text" name="fax" id="fax" value="" size="35" title="fax" class="form-control" admin="1"
-       frontend="1"></span><br/>
-                                        <span class="input-errors" id="fax_err"></span>
-                                    </div>
-                                    <div class="form-field-info"></div>
-                                </div>-->
+                            
                             </div>
                             <div class="clear">&nbsp;</div>
                        
@@ -1096,9 +1212,9 @@ $( document ).tooltip({
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" name="website" id="website" value="" size="35" title="Enter your Website URL Without http://"
-       info="Enter your Website URL Without http://" class="form-control" admin="1" frontend="1"></span><br/>
-                                        <span class="input-errors" id="website_err"></span>
+<input required="" type="url" name="url" id="url" value="" size="35" title="Enter your Website URL Without http://"
+       info="Enter your Website URL Without http://" class="form-control"></span><br/>
+                                       <span class="input-errors" for="url"></span> 
                                     </div>
                                     <div class="form-field-info">
                                         <div class="ui-widget ui-helper-clearfix info">
@@ -1111,53 +1227,24 @@ $( document ).tooltip({
                             </div>
                             <div class="clear">&nbsp;</div>
                         </fieldset>
-                        <fieldset>
-                            <legend>Captcha Security</legend>
-
-                            <div>
-                                <div class="form-label-container">
-                                    <div class="label_class label_class" style="">
-                                        Image Verification :<span class="star_class star_class" style="">*</span></div>
-                                </div>
-
-                                <div class="form-field-container">
-                                    <div class="form-field">
-                                        <div class="captcha">
-                                                          <span class="ui-widget">
-<img width="145" height="50" alt="" src="temp/cache/c7b23aa509bb1a3d073372085fb2116f.png"/>
-<input type="hidden" name="captcha_security[id]" value="c7b23aa509bb1a3d073372085fb2116f"
-       title="A CAPTCHA image shows a random string which the user has to type to submit a form. This is a simple problem for (seeing) humans, but a very hard problem for computers which have to use character recognition, especially, because the displayed string is alienated in a way, which makes it very hard for a computer to decode. For more information see <b style='color:#045EC4'>http://en.wikipedia.org/wiki/Captcha</b>."
-       info="A CAPTCHA image shows a random string which the user has to type to submit a form. This is a simple problem for (seeing) humans, but a very hard problem for computers which have to use character recognition, especially, because the displayed string is alienated in a way, which makes it very hard for a computer to decode. For more information see <b style='color:#045EC4'>http://en.wikipedia.org/wiki/Captcha</b>."
-       class="ui-widget-content ui-corner-all" frontend="1" admin="0" id="captcha_security-id">
-<input type="text" name="captcha_security[input]" id="captcha_security-input" value=""
-       title="A CAPTCHA image shows a random string which the user has to type to submit a form. This is a simple problem for (seeing) humans, but a very hard problem for computers which have to use character recognition, especially, because the displayed string is alienated in a way, which makes it very hard for a computer to decode. For more information see <b style='color:#045EC4'>http://en.wikipedia.org/wiki/Captcha</b>."
-       info="A CAPTCHA image shows a random string which the user has to type to submit a form. This is a simple problem for (seeing) humans, but a very hard problem for computers which have to use character recognition, especially, because the displayed string is alienated in a way, which makes it very hard for a computer to decode. For more information see <b style='color:#045EC4'>http://en.wikipedia.org/wiki/Captcha</b>."
-       class="ui-widget-content ui-corner-all" frontend="1" admin="0"></span><br/>
-                                            <span class="input-errors" id="captcha_security_err"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-field-info">
-                                        <div class="ui-widget ui-helper-clearfix info">
-                                            <div class="ui-widget-header ui-corner-all ui-state-default"
-                                                 title="A CAPTCHA image shows a random string which the user has to type to submit a form. This is a simple problem for (seeing) humans, but a very hard problem for computers which have to use character recognition, especially, because the displayed string is alienated in a way, which makes it very hard for a computer to decode. For more information see <b style='color:#045EC4'>http://en.wikipedia.org/wiki/Captcha</b>.">
-                                                <p><span class="ui-icon ui-icon-info"></span></p></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clear">&nbsp;</div>
-                        </fieldset>
-
-                    </form>
-
-                    <div class="text-center">
+                        
+                        <div class="text-center">
                         <a href="javascript:  void(0);" class="reset_btn btn btn-global">Reset</a>
-                        <a href="javascript: void(0);" class="add_user_btn btn btn-global">Submit</a>
-                    </div>
+                         
+                        <input class="btn"  type="submit" value="Submit">
+ 
+                          </div>
+                          </fieldset>
+                    </form>
+                    
+           
+           
+      
+                    
                 </div>
 
                 <div id="dialog_msg" title="Message Dialog"></div>
-                <div id="dialog_container" style="display:none" title="Processing........ Please wait.">
+                <div id="dialog_container"  title="Processing........ Please wait.">
                     <div id="progressbar"></div>
                 </div>
             </div>
@@ -1192,15 +1279,15 @@ $( document ).tooltip({
             <div class="col-md-4">
                 <div class="social">
                     <a href="http://www.facebook.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/facebook.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/facebook.png"
                             border="0"
                             title="Facebook"></a>
                     <a href="http://www.twitter.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/twitter.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/twitter.png"
                             border="0"
                             title="Twitter"></a>
                     <a href="https://plus.google.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/google-plus.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/google-plus.png"
                             border="0"
                             title="Google Plus"></a>
                 </div>
@@ -1212,9 +1299,7 @@ $( document ).tooltip({
 
 <div class="go-top"><a href="#top" id="scroll-top"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
 <script type="text/javascript"
-        src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/scroll.js"></script>
-        <!--<script src="<?php base_url(); ?>../assets/js/jquery.min.js"></script>
-<script src="<?php base_url(); ?>../assets/js/bootstrap.min.js"></script>
-<script src="<?php base_url(); ?>../assets/js/scripts.js"></script>-->
+        src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/scroll.js"></script>
+        
 </body>
 </html>

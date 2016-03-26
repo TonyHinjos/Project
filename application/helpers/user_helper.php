@@ -18,24 +18,11 @@ function is_logged_in()
 }
 
 
-function check_if_farmer_exists($email_address)
+function check_if_user_exists($email_address)
 {
     $CI = get_instance();
     $CI->db->where('email_address', $email_address);
-    $result = $CI->db->get('farmer_details');
-    if ($result->num_rows() > 0) {
-        return $result->result();
-    } else {
-        return false;
-
-    }
-}
-
-function check_if_buyer_exists($email_address)
-{
-    $CI = get_instance();
-    $CI->db->where('email_address', $email_address);
-    $result = $CI->db->get('buyer_details');
+    $result = $CI->db->get('user_details');
     if ($result->num_rows() > 0) {
         return $result->result();
     } else {
@@ -93,8 +80,8 @@ function send_message($number, $message)
 {
 
 
-    $username = "urandu";
-    $apikey = "1677ae70e5d03411d857f3c22e046441681af2f56c3052cadad3f0305aaa3218";
+    $username = "tonyhinjos";
+    $apikey = "aab1db5152482a55e83139c84d9b88427dfa415dbada24a5f91d975fed41e556";
 
     $recipients = $number;//enter the phone numbers you wish to send the texts to.....here
 

@@ -1,17 +1,18 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Welcome extends MY_Controller
-{
+{   
+     private $data;
     protected $before_filter = array(
         'action' => '_check_if_logged_in',
         'except' => array()
     );
-    private $data;
+    
 
     public function index()
     {
         //$this->load->view('welcome_message');
-        redirect(base_url() . "browse_orders");
+        redirect(base_url() . "user_dashboard");
     }
 }
 

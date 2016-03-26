@@ -22,7 +22,7 @@
     <!-- <title><?php if (!empty($title)) {
         echo($title);
     } ?></title>-->
-    <title>User-role</title>
+    <title>Land|GIS</title>
 
     <script type=""
             src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
@@ -220,8 +220,10 @@
                     <span class="listing-add"><a href="<?php echo(base_url()); ?>login/user_role"><span
                                 class="glyphicon glyphicon-plus-sign"></span>Create Account</a></span>
                         </br>
-                        <span><a style="font-size:15px;font-weight: 700" class="pull-right link-button "
-                                 href="<?php echo(base_url()); ?>login/user_login"> Login</a></span>
+                        <span style="margin-left:220px;background-color:#449d44"> <a
+                                style="font-size:15px;font-weight: 700"
+                                href="<?php echo(base_url()); ?>login/user_login"
+                                class="btn btn-success btn-sm no-radius"><i class="fa fa-sign-in"></i> Login</a></span>
                     </div>
                 </div>
             </div>

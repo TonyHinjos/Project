@@ -105,7 +105,7 @@ class MY_Controller extends CI_Controller
     public function _check_if_logged_in()
     {
         if (!is_logged_in()) {
-            redirect(base_url() . 'login');
+            redirect(base_url() . 'landing');
         }
     }
 
@@ -117,7 +117,7 @@ class MY_Controller extends CI_Controller
     {
         $this->load->library('Authentic');
         if ($this->authentic->logged_in()) {
-            redirect(base_url());
+            redirect(base_url().'welcome');
         }
     }
 
@@ -125,7 +125,7 @@ class MY_Controller extends CI_Controller
     {
         $this->load->library('Authentic');
         if (!$this->authentic->logged_in()) {
-            redirect(site_url('login'));
+            redirect(site_url('user_login'));
         }
     }
 }

@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html class="k-ff k-ff44" dir="ltr" lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/css; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- base href="http://demo.script4realestate.com/" -->
+    <meta name="viewport" content="width=device-width, initial-scale=2">
     <link rel="shortcut icon"
-          href="http://demo.script4realestate.com/data/adminImages/headerImages/1369722780_favicon.ico">
+          href="<?php base_url(); ?>../assets/data/adminImages/headerImages/1369722780_favicon.ico">
+
+<!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700' rel='stylesheet'
+          type='text/css'>
+
     <meta name="keywords"
           content="Demo - Realestate CMS, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
     <meta name="description"
           content="Demo - Realestate CMS - A Commercial CMS powered by Eicrasoft Ltd, jQuery and 960grid">
-    <title>Administrator's Control Panel</title>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/jquery_002.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/jquery-ui.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/common.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/slicker.js"></script>
-    <script type="text/javascript" src="Administrator%27s%20Control%20Panel_files/dropdown.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/jquery_003.js"></script>
-    <script type="text/javascript" src="Administrator%27s%20Control%20Panel_files/ddslick.js"></script>
-    <link href="Administrator%27s%20Control%20Panel_files/bootstrap.css" media="screen" rel="stylesheet"
+
+    <title>Land|GIS</title>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/jquery_002.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/jquery-ui.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/common.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/slicker.js"></script>
+    <script type="text/javascript" src="<?php base_url(); ?>assets/admin/js/dropdown.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/jquery_003.js"></script>
+    <script type="text/javascript" src="<?php base_url(); ?>assets/admin/js/ddslick.js"></script>
+
+    <link href="<?php base_url(); ?>assets/admin/css/bootstrap.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/jquery-ui.css" media="screen" rel="stylesheet"
+    <!--<link href="<?php base_url(); ?>assets/admin/css/bootstrap.min.css" media="screen" rel="stylesheet"
+          type="text/css">-->
+
+    <link href="<?php base_url(); ?>assets/admin/css/jquery-ui.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/mega-menu.css" media="screen" rel="stylesheet"
+    <link href="<?php base_url(); ?>assets/admin/css/mega-menu.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/mega-menu-black.css" media="screen" rel="stylesheet"
+    <link href="<?php base_url(); ?>assets/admin/css/mega-menu-black.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/font-awesome.css" media="screen" rel="stylesheet"
+    <link href="<?php base_url(); ?>assets/admin/css/font-awesome.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/floatingbar.css" media="screen" rel="stylesheet"
+    <link href="<?php base_url(); ?>assets/admin/css/floatingbar.css" media="screen" rel="stylesheet"
           type="text/css">
-    <script type="" src="Administrator%27s%20Control%20Panel_files/kendo_003.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/kendo_002.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/kendo.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/kendo.js"></script>
-    <script type="" src="Administrator%27s%20Control%20Panel_files/uploader.js"></script>
-    <link href="Administrator%27s%20Control%20Panel_files/kendo.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/kendo_002.css" media="screen" rel="stylesheet"
+
+
+
+    <script type="" src="<?php base_url(); ?>assets/admin/js/kendo_003.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/kendo_002.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/kendo.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/kendo.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/admin/js/uploader.js"></script>
+
+    <link href="<?php base_url(); ?>assets/admin/css/kendo.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="<?php base_url(); ?>assets/admin/css/kendo_002.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="Administrator%27s%20Control%20Panel_files/stylesheet.css" media="screen" rel="stylesheet"
+    <link href="<?php base_url(); ?>assets/admin/css/stylesheet.css" media="screen" rel="stylesheet"
           type="text/css">
     <script>
         function qToolTipFunctions() {
@@ -236,18 +251,18 @@
     });
 </script>
 
-<div id="user-nav">
+<nav class="navbar-default navbar-fixed-top" id="user-nav">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
                 <ul class="btn-group">
-                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span> demo@script4realestate.com
+                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span>Anthony
                     </li>
                     <li class="btn">&nbsp;<a href="http://demo.script4realestate.com/Members/index/profile"><i
                                 class="fa fa-user"></i><span> Administrator</span></a></li>
-                    <li class="btn"><a href="http://demo.script4realestate.com/" target="_blank"><i
+                    <li class="btn"><a href="<?php echo(base_url()); ?>" target="_blank"><i
                                 class="fa fa-eye"></i> <span>Public View</span></a></li>
-                    <li class="btn"><a href="http://demo.script4realestate.com/Administrator/login/logout"><i
+                    <li class="btn"><a href=""><i
                                 class="fa fa-power-off"></i> <span>Log Out</span></a></li>
                 </ul>
             </div>
@@ -330,103 +345,18 @@
                         });
                     });
                 </script>
-                <div class="flags">
-                    <dl id="sample" class="dropdown" style="margin:0; padding:0">
-                        <dt><a href="javascript:void(0);"><span class="lang">English - United States</span><span
-                                    class="flag"><img src="Administrator%27s%20Control%20Panel_files/US.gif"
-                                                      title="English (USA)" border="0"></span> &nbsp;</a></dt>
-                        <dd>
-                            <ul>
-                                <li><a class="change_lang" rel="ar_SA:rtl" href="javascript:void(0);"><span
-                                            class="lang">العربية - المملكة العربية السعودية</span><span
-                                            class="flag"><img src="Administrator%27s%20Control%20Panel_files/SA.gif"
-                                                              title="Arabic (Saudia Arabia)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="bn_BD:ltr" href="javascript:void(0);"><span
-                                            class="lang">বাংলা - বাংলাদেশ</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/BD.gif"
-                                                title="Bangla (Bangladesh)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="de_DE:ltr" href="javascript:void(0);"><span
-                                            class="lang">Deutsch - Deutschland</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/DE.gif" title="German"
-                                                border="0"></span></a></li>
-                                <li><a class="change_lang" rel="en_GB:ltr" href="javascript:void(0);"><span
-                                            class="lang">English - United Kingdom</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/GB.gif"
-                                                title="English (UK)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="en_US:ltr" href="javascript:void(0);"><span
-                                            class="lang">English - United States</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/US.gif"
-                                                title="English (USA)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="es_ES:ltr" href="javascript:void(0);"><span
-                                            class="lang">español - España</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/ES.gif" title="Spanish"
-                                                border="0"></span></a></li>
-                                <li><a class="change_lang" rel="fr_FR:ltr" href="javascript:void(0);"><span
-                                            class="lang">français - France</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/FR.gif" title="French"
-                                                border="0"></span></a></li>
-                                <li><a class="change_lang" rel="mk_MK:ltr" href="javascript:void(0);"><span
-                                            class="lang">македонски - Македонија</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/MK.gif"
-                                                title="Macedonian (Macedonia)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="nl_BE:ltr" href="javascript:void(0);"><span
-                                            class="lang">Nederlands - België</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/BE.gif"
-                                                title="Dutch (Belgium)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="nl_NL:ltr" href="javascript:void(0);"><span
-                                            class="lang">Nederlands - Nederland</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/NL.gif"
-                                                title="Dutch (Netherlands)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="pt_BR:ltr" href="javascript:void(0);"><span
-                                            class="lang">português - Brasil</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/BR.gif"
-                                                title="Portugis (Brazil)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="pt_PT:ltr" href="javascript:void(0);"><span
-                                            class="lang">português - Portugal</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/PT.gif"
-                                                title="Portugis (Portugal)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="ru_RU:ltr" href="javascript:void(0);"><span
-                                            class="lang">русский - Россия</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/RU.gif" title="Russian"
-                                                border="0"></span></a></li>
-                                <li><a class="change_lang" rel="tr_TR:ltr" href="javascript:void(0);"><span
-                                            class="lang">Türkçe - Türkiye</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/TR.gif" title="Turkey"
-                                                border="0"></span></a></li>
-                                <li><a class="change_lang" rel="it_IT:ltr" href="javascript:void(0);"><span
-                                            class="lang">italiano - Italia</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/IT.gif" title="Italy"
-                                                border="0"></span></a></li>
-                                <li><a class="change_lang" rel="id_ID:ltr" href="javascript:void(0);"><span
-                                            class="lang">Bahasa Indonesia - Indonesia</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/ID.gif"
-                                                title="Indoneshian" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="zh_CN:ltr" href="javascript:void(0);"><span
-                                            class="lang">中文 - 中国</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/CN.gif"
-                                                title="Chainese (Simplified)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="zh_TW:ltr" href="javascript:void(0);"><span
-                                            class="lang">中文 - 台灣</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/TW.gif"
-                                                title="Chainese (Traditional)" border="0"></span></a></li>
-                                <li><a class="change_lang" rel="sk_SK:ltr" href="javascript:void(0);"><span
-                                            class="lang">slovenčina - Slovensko</span><span class="flag"><img
-                                                src="Administrator%27s%20Control%20Panel_files/SK.gif"
-                                                title="Slovak (Slovakia)" border="0"></span></a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </div>
             </div>
         </div>
     </div>
-</div>
+</nav>
+</br>
+</br>
 
-<header>
+<!--<header>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
-                <div class="logo"><img src="Administrator%27s%20Control%20Panel_files/header_logo.jpg" height="60">
+                <div class="logo"><img src="<?php base_url(); ?>assets/admin/img/header_logo.jpg" height="60">
 
                     <h1>Administrator's Control Panel</h1></div>
             </div>
@@ -449,7 +379,7 @@
             </div>
         </div>
     </div>
-</header>
+</header>-->
 
 <div class="container-fluid">
 
@@ -457,7 +387,7 @@
     <ul class="sky-mega-menu sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
         <!-- home -->
         <li>
-            <a href="http://demo.script4realestate.com/Dashboard"><i class="fa fa-home"></i></a>
+            <a href="<?php echo(base_url()); ?>admin_dashboard"><i class="fa fa-home"></i></a>
         </li>
         <!--/ home -->
 
@@ -748,8 +678,8 @@
     <div class="row">
         <!--Tree Menu Start-->
         <div class="col-lg-3 col-md-12 visible-lg">
-            <script type="text/javascript" src="Administrator%27s%20Control%20Panel_files/jqueryFileTree.js"></script>
-            <link href="Administrator%27s%20Control%20Panel_files/jqueryFileTree.css" media="screen" rel="stylesheet"
+            <script type="text/javascript" src="<?php base_url(); ?>assets/admin/js/jqueryFileTree.js"></script>
+            <link href="<?php base_url(); ?>assets/admin/css/jqueryFileTree.css" media="screen" rel="stylesheet"
                   type="text/css">
             <script type="text/javascript">
 
@@ -829,13 +759,14 @@
 
         <!--Content Start-->
         <div class="col-lg-9 col-md-12"> <!-- col-lg-12 -->
+
             <script type="text/javascript"
-                    src="Administrator%27s%20Control%20Panel_files/easyResponsiveTabs.js"></script>
-            <link href="Administrator%27s%20Control%20Panel_files/easy-responsive-tabs.css" media="screen"
+                    src="<?php base_url(); ?>assets/admin/js/easyResponsiveTabs.js"></script>
+            <link href="<?php base_url(); ?>assets/admin/css/easy-responsive-tabs.css" media="screen"
                   rel="stylesheet" type="text/css">
-            <link href="Administrator%27s%20Control%20Panel_files/admin.css" media="screen" rel="stylesheet"
+            <link href="<?php base_url(); ?>assets/admin/css/admin.css" media="screen" rel="stylesheet"
                   type="text/css">
-            <script type="text/javascript" src="Administrator%27s%20Control%20Panel_files/jquery.js"></script>
+          <script type="text/javascript" src="<?php base_url(); ?>assets/admin/js/jquery.js"></script>
             <script type="text/javascript">
                 var settingInvoiceObj = {
                     grid_id: 'grid-invoice',
@@ -1671,17 +1602,17 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="row">
                             <div class="col-md-2 col-xs-3">
-                                <img src="Administrator%27s%20Control%20Panel_files/avatar.png" class="img-responsive">
+                                <img src="<?php base_url(); ?>assets/admin/img/avatar.png" class="img-responsive">
                             </div>
                             <div class="col-md-10 col-xs-9">
                                 <p>
                                     Administrator Profile<br>
-                                    User Name : demo@script4realestate.com<br>
-                                    Email : demo@script4realestate.com<br>
-                                    Payment Gateway: demo@script4realestate.com<br>
+                                    User Name : awanjohim@gmail.com<br>
+                                    Email : awanjohim@gmail.com.com<br>
+                                    Payment Gateway: paypal.com<br>
                                     Last Login : Wednesday, February 17, 2016 2:37:35 PM<br>
                                 </p>
-                                <a href="http://demo.script4realestate.com/Administrator/login/logout"
+                                <a href="<?php echo (base_url()); ?>login/logout"
                                    class="btn btn-success btn-sm no-radius"><i class="fa fa-unlock-alt"></i> Log Out</a>
                             </div>
                         </div>
@@ -3151,17 +3082,50 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
-                Powered By : <a href="http://www.eicra.com/" target="_blank">Eicra Soft Ltd</a><br>
-                Copyright © 2007-2016 All Rights Reserved
+                Powered By : <a href="" target="_blank">Anthony Wanjohi</a><br>
+                LandGIS &copy; <?php echo(date("Y")); ?> All Rights Reserved
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
-                <div class="version text-right">Version : 2.10.60</div>
+                <div class="version text-right">Version : 2.1.1</div>
             </div>
         </div>
     </div>
 </footer>
 <!--Footer End-->
+<style type="text/css">
+.go-top a{
+    font-size:18px;
+    background:#67AE34;
+    width:45px;
+    line-height:45px;
+    display:block;
+    z-index:100;
+    transition:all 0.9s;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    color:#FFF;
+    outline:0;
+    display:inline-block;
+    text-align:center;
+    border-radius:3px;
+    -moz-border -radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.go-top a:hover{
+    transition:all 0.9s;
+    color:#FFF;
+    background-color:#F0AD4E;
+}
+    
+</style>
+ 
+
+<div class="go-top"><a href="#top" id="scroll-top"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
+<script type="text/javascript"
+        src="<?php base_url(); ?>assets/user/js/scroll2.js"></script>
 
 <div class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="log">
     <div>English (USA)</div>

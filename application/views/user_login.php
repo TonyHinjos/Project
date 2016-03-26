@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon"
-          href="<?php base_url(); ?>../assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
+          href="<?php base_url(); ?>assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
     <meta name="keywords"
           content="Demo - Realestate CMS, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
     <meta name="description"
@@ -14,58 +14,58 @@
     <!--<title><?php if (!empty($title)) {
         echo($title);
     } ?></title>-->
-    <title>Frontend-Login</title>
+    <title>Land|GIS</title>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/js/slicker.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/js/common.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/js/slicker.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/js/common.js"></script>
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
         media="screen"
         rel="stylesheet" type="text/css">
 
-    <!--<link href="<?php base_url(); ?>../assets/css/styles.css"
+    <!--<link href="<?php base_url(); ?>assets/css/styles.css"
           media="screen" rel="stylesheet" type="text/css">-->
-    <link href="<?php base_url(); ?>../assets/css/nguvu.css"
+    <link href="<?php base_url(); ?>assets/css/nguvu.css"
           media="screen" rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/css/doc.min.css"
+    <link href="<?php base_url(); ?>assets/css/doc.min.css"
           media="screen" rel="stylesheet" type="text/css">
 
 
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
         media="screen" rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
         media="screen" rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/template.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/template.css"
           media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/general.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/general.css"
           media="screen" rel="stylesheet"
           type="text/css">
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
+            src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
+            src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/application/modules/Portfolio/js/uploader.js"></script>
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
+            src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/application/modules/Portfolio/js/uploader.js"></script>
+    <link href="<?php base_url(); ?>assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
+    <link href="<?php base_url(); ?>assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/pagination.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/pagination.css"
           media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/menu.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/menu.css"
           media="screen"
           rel="stylesheet"
           type="text/css">
@@ -109,11 +109,11 @@
                 <div class="row">
                     <div class="col-xs-5 user-links">
                         Welcome to LandGIS | <a href="<?php base_url(); ?>">Login</a> | <a
-                            href="<?php echo(base_url()); ?>login/user_role">Register</a></div>
+                            href="<?php echo(base_url()); ?>user_register">Register</a></div>
 
                     <div class="col-xs-7 top-links">
                         <a href="<?php base_url(); ?>">My Account</a> |
-                        <a href="<?php echo(base_url()); ?>login/contact_us">Contact us</a>
+                        <a href="<?php echo(base_url()); ?>landing/contact_us">Contact us</a>
 
                         <script type="text/javascript">
                             $(document).ready(function () { //on DOM ready
@@ -191,6 +191,36 @@
                                 });
                             });
                         </script>
+                        
+                        <style>
+             .ts-bt{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background:#74A442 ;
+    padding: 0 15px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing:1px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #2a9341;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.ts-bt:hover, .ts-bt:focus{
+    background: #458218;
+    color: #74A442;
+}
+
+            </style>
+
+
                     </div>
                 </div>
             </div>
@@ -201,18 +231,15 @@
                     <div class="col-md-7">
                         <div class="logo">
                             <a href="<?php echo(base_url()); ?>"><img
-                                    src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/logo.png"
+                                    src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/logo.png"
                                     alt="Realestate CMS" title="LandSearchGIS" border="0"></a>
                         </div>
                     </div>
 
-                    <div class="col-md-5">
-                    <span class="listing-add"><a href="<?php echo(base_url()); ?>login/user_role"><span
-                                class="glyphicon glyphicon-plus-sign"></span>Create Account</a></span>
-                        </br>
-                        <span><a style="font-size:15px;font-weight: 700" class="pull-right link-button "
-                                 href="<?php base_url(); ?>"> Login</a></span>
-                    </div>
+                    </br>
+                    <span style="margin-left:230px"class="navbar-form"><a href="<?php echo (base_url()); ?>user_register" class="ts-bt bt-login"><i class="fa fa-user"></i>Register</a></span>
+                    <span style="margin-right:20px"class="navbar-form"><a href="<?php echo (base_url()); ?>" class="ts-bt bt-login"><i class="fa fa-sign-in"></i>LOGIN</a></span>
+    
                 </div>
             </div>
         </div>
@@ -241,8 +268,6 @@
 <!-- Top Navigation Start-->
 
 <!-- Top Navigation End-->
-</br>
-</br>
 </br>
 </br>
 </br>
@@ -397,7 +422,7 @@
 
                 (function () {
                     var e = document.createElement('script');
-                    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+                    e.src = document.location.protocol + '<?php base_url(); ?>assets/js/all.js';
                     e.async = true;
                     document.getElementById('fb-root').appendChild(e);
 
@@ -557,7 +582,7 @@
                         var formData = getFormData();
 
                         $.ajax({
-                            url: "/Members/frontend/auth/menu_id/Realestate-Home",
+                            url: "<?php echo base_url(); ?>login/user_authenticate",
                             type: 'POST',
                             data: formData,
                             success: function (response) {
@@ -567,7 +592,7 @@
                                 if (json_arr.status == 'ok') {
                                     $('#actionMessage').html(succMsgDesign(json_arr.msg));
                                     resetFields();
-                                    var mem_link = 'Members-Dashboard';
+                                    var mem_link = 'user_dashboard';
                                     $('#mem_link').attr('href', mem_link);
                                     $('#login_box').css('display', 'none');
                                     $('#logout_box').css('display', '');
@@ -595,7 +620,7 @@
                         var formData = getFormData();
 
                         $.ajax({
-                            url: "/Members/frontend/auth/menu_id/Realestate-Home",
+                            url: "<?php echo base_url(); ?>login/user_authenticate",
                             type: 'POST',
                             data: formData,
                             success: function (response) {
@@ -605,7 +630,7 @@
                                 if (json_arr.status == 'ok') {
                                     $('#actionMessage').html(succMsgDesign(json_arr.msg));
                                     resetFields();
-                                    var mem_link = 'Members-Dashboard';
+                                    var mem_link = 'user_dashboard';
                                     $('#mem_link').attr('href', mem_link);
                                     $('#login_box').css('display', 'none');
                                     $('#logout_box').css('display', '');
@@ -670,22 +695,24 @@
 
                             <div id="actionMessage"></div>
                             <div id="login_box">
-                                <form id="AdminLogin" name="AdminLogin" method="post" action="">
+                     <form role="form" method="post" action="<?php echo(base_url()); ?>user_login/user_authenticate">
                                     <p>Username</p>
 
-                                    <input type="text" name="username" id="username" value="" class="icon user-icon">
+                                    <input style="width: 80%;
+height: 60%;
+margin: 0 0 5px 0;padding: 7px;" type="email"  name="email_address" id="username" value="" class="icon user-icon" required="">
                                     <span class="input-errors" id="username_err"></span>
 
                                     <p>Password</p>
 
                                     <input type="password" name="password" id="password" value=""
-                                           class="icon pass-icon"> <span class="input-errors" id="password_err"></span>
+                                           class="icon pass-icon"  required=""> <span class="input-errors" id="password_err"></span>
 
 
-                                    <div class="clear"><input type="button" name="login" value="LOGIN"
-                                                              class="login_send_btn"/></div>
+                                    <div class="clear"><input type="submit" name="login" value="LOGIN"
+                                                              class="btn"/></div>
 
-                                    <a href="Forget-Password">Forgot Password?</a>
+                                    <a href="<?php echo(base_url()); ?>login/forget_password">Forgot Password?</a>
 
                                     <a href="javascript:void(0)" id="fb_login_btn" class="btn btn-facebook"><i
                                             class="icon-facebook"></i>
@@ -710,7 +737,7 @@
                 </div>
 
                 <img
-                    src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/mod_img/login.jpg"
+                    src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/mod_img/login.jpg"
                     border="0"
                     class="lock">
 
@@ -738,7 +765,7 @@
 
                         Not ready to signup yet? Feel free to browse some other popular site sections!
                     </div>
-                    <a class="join" href="<?php echo(base_url()); ?>login/user_role">Join Now FREE!</a>
+                    <a class="join" href="<?php echo(base_url()); ?>landing/user_register">Join Now FREE!</a>
                 </div>
             </div>
 
@@ -777,15 +804,15 @@
             <div class="col-md-4">
                 <div class="social">
                     <a href="http://www.facebook.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/facebook.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/facebook.png"
                             border="0"
                             title="Facebook"></a>
                     <a href="http://www.twitter.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/twitter.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/twitter.png"
                             border="0"
                             title="Twitter"></a>
                     <a href="https://plus.google.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/google-plus.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/google-plus.png"
                             border="0"
                             title="Google Plus"></a>
                 </div>
@@ -796,11 +823,11 @@
 <!--Footer End-->
 
 <div class="go-top"><a href="#top" id="scroll-top"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
-<!--<script src="<?php base_url(); ?>../assets/js/jquery.min.js"></script>-->
-<!--<script src="<?php base_url(); ?>../assets/js/bootstrap.min.js"></script>
-<script src="<?php base_url(); ?>../assets/js/scripts.js"></script>-->
+<!--<script src="<?php base_url(); ?>assets/js/jquery.min.js"></script>-->
+<!--<script src="<?php base_url(); ?>assets/js/bootstrap.min.js"></script>
+<script src="<?php base_url(); ?>assets/js/scripts.js"></script>-->
 
 <script type="text/javascript"
-        src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/scroll.js"></script>
+        src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/scroll.js"></script>
 </body>
 </html>

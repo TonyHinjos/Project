@@ -8,6 +8,7 @@ class Admin_dashboard extends MY_Controller
     {
     
         $this->load->view('admin_dashboard');
+    }
     
 }
 
