@@ -1,3 +1,8 @@
+
+
+
+<?php if($this->session->userdata('user_role')=='landowner' || $this->session->userdata('user_role')=='landbuyer' || $this->session->userdata('user_role')=='agent' || $this->session->userdata('user_role')=='advocate' || $this->session->userdata('user_role')=='surveyor'){ ?>
+
 <!DOCTYPE html>
 <html class="k-ff k-ff44" dir="ltr" lang="en">
 <head>
@@ -240,7 +245,7 @@
                     </li>
                     <li class="btn">&nbsp;<a href="<?php echo(base_url());?>user_profile"><i
                             class="fa fa-user"></i><span>User</span></a></li>
-                    <li class="btn"><a href="<?php echo(base_url());?>login" target="_blank"><i class="fa fa-eye"></i>
+                    <li class="btn"><a href="<?php echo(base_url());?>landing" target="_blank"><i class="fa fa-eye"></i>
                         <span>Public View</span></a></li>
                     <li class="btn"><a href="<?php echo (base_url()); ?>user_login/logout"><i
                             class="fa fa-power-off"></i> <span>Log Out</span></a></li>
@@ -1684,3 +1689,4 @@
 <div class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="log"></div>
 </body>
 </html>
+<?php } ?>

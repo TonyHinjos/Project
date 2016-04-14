@@ -6,8 +6,8 @@ var parts = document.location.search.slice( 1 ).split( "&" ),
 	src = scripts[ scripts.length - 1].src,
 	i = 0,
 	current,
-	version = "1.11.1",
-	file = "http://code.jquery.com/jquery-git.js";
+	version = "1.9.1",
+	file = "jquery-git.js";
 
 for ( ; i < length; i++ ) {
 	current = parts[ i ].split( "=" );

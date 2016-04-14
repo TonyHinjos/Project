@@ -2,6 +2,7 @@
 
 class User_dashboard extends MY_Controller
 {   
+     private $data;
      protected $before_filter = array(
         'action' => '_check_if_logged_in',
         'except' => array()
@@ -27,10 +28,7 @@ class User_dashboard extends MY_Controller
     {
         $this->load->view('search_form');
     }
-    public function review_entry()
-    {
-        $this->load->view('review_entry');
-    }
+    
 
 }
 

@@ -24,11 +24,15 @@
     
     <script type=""
             src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
-<script type=""
+           <!-- <script type=""
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery2.js"></script>-->
+            <script type=""
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.validate.js"></script>
+<!--<script type=""
             src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery-2.1.0.min.js"></script>
 
             <script type=""
-            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.validate.min.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.validate.min.js"></script>-->
     <script type="" src="assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
 
     <script type=""
@@ -355,83 +359,83 @@ $( document ).tooltip({
                     });
 
 
-                    // $('a.add_user_btn').click(function () {
-                    //     var formData = commonGetFormData(settingObj.form_action.form_id, settingObj.form_action.hasTinyMCE);
-                    //     if (!formData.role_id) {
-                    //         formData.role_id = '';
-                    //     }
-                    //     $.ajax({
-                    //         url: "",
-                    //         type: 'POST',
-                    //         data: formData,
-                    //         beforeSend: function () {
-                    //             commonOpenLoaderDialog(settingObj);
-                    //             commonRemoveFormError(settingObj);
-                    //         },
-                    //         success: function (response) {
-                    //             //alert(response);
-                    //             try {
-                    //                 var json_arr = eval("(" + response + ")");
-                    //                 commonRefreshCaptcha(json_arr, 'span');
+                    $('a.add_user_btn').click(function () {
+                        var formData = commonGetFormData(settingObj.form_action.form_id, settingObj.form_action.hasTinyMCE);
+                        if (!formData.role_id) {
+                            formData.role_id = '';
+                        }
+                        $.ajax({
+                            url: "",
+                            type: 'POST',
+                            data: formData,
+                            beforeSend: function () {
+                                commonOpenLoaderDialog(settingObj);
+                                commonRemoveFormError(settingObj);
+                            },
+                            success: function (response) {
+                                //alert(response);
+                                try {
+                                    var json_arr = eval("(" + response + ")");
+                                    commonRefreshCaptcha(json_arr, 'span');
 
-                    //                 if (json_arr.status == 'ok') {
-                    //                     if (json_arr.package_msg == 'ok') {
-                    //                         var package_name = json_arr.package_info[0].field_value;
-                    //                         var package_price = parseFloat(json_arr.package_info[1].field_value);
-                    //                         if (package_price != 0) {
-                    //                             if (json_arr.gateway_info) {
-                    //                                 gateWayList(json_arr.gateway_info, json_arr.member_id);
-                    //                             }
-                    //                             //document.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=demo@script4realestate.com&item_name="+package_name+"&item_number=1&amount="+package_price+"&no_shipping=0&no_note=1&currency_code=USD&bn=PP%2dBuyNowBF&charset=UTF%2d8 target=_blank";
-                    //                         }
+                                    if (json_arr.status == 'ok') {
+                                        if (json_arr.package_msg == 'ok') {
+                                            var package_name = json_arr.package_info[0].field_value;
+                                            var package_price = parseFloat(json_arr.package_info[1].field_value);
+                                            if (package_price != 0) {
+                                                if (json_arr.gateway_info) {
+                                                    gateWayList(json_arr.gateway_info, json_arr.member_id);
+                                                }
+                                                //document.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=demo@script4realestate.com&item_name="+package_name+"&item_number=1&amount="+package_price+"&no_shipping=0&no_note=1&currency_code=USD&bn=PP%2dBuyNowBF&charset=UTF%2d8 target=_blank";
+                                            }
 
-                    //                         commonCloseLoaderDialog(settingObj);
-                    //                     }
-                    //                     else if (json_arr.package_msg == 'invoice') {
-                    //                         document.location.href = "http://demo.script4realestate.com/Create-Invoice";
-                    //                     }
-                    //                     else {
-                    //                         commonCloseLoaderDialog(settingObj);
-                    //                     }
-                    //                     $('#actionMessage').html(succMsgDesign(json_arr.msg));
-                    //                     commonResetFormFields(settingObj);
-                    //                     commonGoMessage(settingObj);
-                    //                 }
-                    //                 else if (json_arr.status == 'errV') {
-                    //                     commonCloseLoaderDialog(settingObj);
-                    //                     $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
+                                            commonCloseLoaderDialog(settingObj);
+                                        }
+                                        else if (json_arr.package_msg == 'invoice') {
+                                            document.location.href = "http://demo.script4realestate.com/Create-Invoice";
+                                        }
+                                        else {
+                                            commonCloseLoaderDialog(settingObj);
+                                        }
+                                        $('#actionMessage').html(succMsgDesign(json_arr.msg));
+                                        commonResetFormFields(settingObj);
+                                        commonGoMessage(settingObj);
+                                    }
+                                    else if (json_arr.status == 'errV') {
+                                        commonCloseLoaderDialog(settingObj);
+                                        $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
 
-                    //                     for (var i = 0; i < json_arr.msg.length; i++) {
-                    //                         focusFirst(json_arr.msg[i].key, json_arr.msg[i].value, i);
-                    //                         commonAddFormError(json_arr.msg[i].key, json_arr.msg[i].value);
-                    //                     }
-                    //                 }
-                    //                 else if (json_arr.status == 'errP') {
-                    //                     commonCloseLoaderDialog(settingObj);
-                    //                     $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
-                    //                     commonAddFormError('confirmPassword', json_arr.msg);
-                    //                 }
-                    //                 else {
-                    //                     commonCloseLoaderDialog(settingObj);
-                    //                     $('#actionMessage').html(errMsgDesign(json_arr.msg));
-                    //                     commonGoMessage(settingObj);
-                    //                 }
-                    //             }
-                    //             catch (error) {
-                    //                 commonCloseLoaderDialog(settingObj);
-                    //                 var error_arr = [error, response];
-                    //                 var msg = commonErrMsgException(error_arr);
-                    //                 $('#actionMessage').html(errMsgDesign(msg));
-                    //                 commonGoMessage(settingObj);
-                    //             }
-                    //         },
-                    //         error: function (xhr, status, error) {
-                    //             commonCloseLoaderDialog(settingObj);
-                    //             var msg = "Error! " + xhr.status + " " + error;
-                    //             $('#actionMessage').html(errMsgDesign(msg));
-                    //         }
-                    //     });
-                    // });
+                                        for (var i = 0; i < json_arr.msg.length; i++) {
+                                            focusFirst(json_arr.msg[i].key, json_arr.msg[i].value, i);
+                                            commonAddFormError(json_arr.msg[i].key, json_arr.msg[i].value);
+                                        }
+                                    }
+                                    else if (json_arr.status == 'errP') {
+                                        commonCloseLoaderDialog(settingObj);
+                                        $('#actionMessage').html(errMsgDesign("There are some error to perform this action. Please See below --"));
+                                        commonAddFormError('confirmPassword', json_arr.msg);
+                                    }
+                                    else {
+                                        commonCloseLoaderDialog(settingObj);
+                                        $('#actionMessage').html(errMsgDesign(json_arr.msg));
+                                        commonGoMessage(settingObj);
+                                    }
+                                }
+                                catch (error) {
+                                    commonCloseLoaderDialog(settingObj);
+                                    var error_arr = [error, response];
+                                    var msg = commonErrMsgException(error_arr);
+                                    $('#actionMessage').html(errMsgDesign(msg));
+                                    commonGoMessage(settingObj);
+                                }
+                            },
+                            error: function (xhr, status, error) {
+                                commonCloseLoaderDialog(settingObj);
+                                var msg = "Error! " + xhr.status + " " + error;
+                                $('#actionMessage').html(errMsgDesign(msg));
+                            }
+                        });
+                    });
 
                 });
 
@@ -893,7 +897,7 @@ border: 1px solid red;
 
                 <div id="memberFormDiv">
 
-                    <form role="form" action="<?php echo(base_url()); ?>user_register/user_create_account" method="post" id="MemberForm" id="signup">
+                    <form role="form" action="<?php echo(base_url()); ?>user_register/user_create_account" method="post" id="MemberForm" id="signupForm">
                     <fieldset>
                     <fieldset>
                         <legend >Select User Role:&nbsp;<span class="members-star star_class">*</span></legend>
@@ -922,7 +926,7 @@ border: 1px solid red;
                                     type="radio" name="userrole" id="userrole" value="advocate" size="1"
                                     class="ui-widget-content ui-corner-all" title="Name of User Role">Advocate</label>
                         </div>
-                        <span for="userrole"></span>
+                        <span class="input-errors" for="userrole"></span>
 
                         
                         <div class="clear">&nbsp;</div>

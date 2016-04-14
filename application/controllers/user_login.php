@@ -45,6 +45,7 @@ class User_login extends CI_Controller
             $first_name = $is_valid[0]['first_name'];
             $surname = $is_valid[0]['surname'];
             $last_name = $is_valid[0]['last_name'];
+            $mobile_no = $is_valid[0]['mobile_no'];
             //print_r($is_valid);
             $data = array(
                 'user_id' => $user_id,
@@ -52,13 +53,17 @@ class User_login extends CI_Controller
                 'user_role' => $user_role,
                 'first_name' => $first_name,
                 'surname' => $surname,
+                'mobile_no' => $mobile_no,
                 'last_name' => $last_name,
                 'email_address' => $email
             );
             $this->session->set_userdata($data);
-
-            redirect(base_url());
-
+             if($this->session->userdata('user_role')=='admin')
+             {
+                redirect(base_url().'admin_dashboard#?success=true');
+            }elseif($this->session->userdata('user_role')=='landowner' || $this->session->userdata('user_role')=='landbuyer' || $this->session->userdata('user_role')=='agent' || $this->session->userdata('user_role')=='advocate' || $this->session->userdata('user_role')=='surveyor'){
+                 redirect(base_url().'#?success=true');
+            }
 
         } else // incorrect username or password
         {

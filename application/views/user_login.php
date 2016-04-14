@@ -29,6 +29,8 @@
         href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
         media="screen"
         rel="stylesheet" type="text/css">
+        <script type=""
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery-2.1.0.min.js"></script>
 
     <!--<link href="<?php base_url(); ?>assets/css/styles.css"
           media="screen" rel="stylesheet" type="text/css">-->
@@ -712,7 +714,7 @@ margin: 0 0 5px 0;padding: 7px;" type="email"  name="email_address" id="username
                                     <div class="clear"><input type="submit" name="login" value="LOGIN"
                                                               class="btn"/></div>
 
-                                    <a href="<?php echo(base_url()); ?>login/forget_password">Forgot Password?</a>
+                                    <a href="<?php echo(base_url()); ?>forget_password">Forgot Password?</a>
 
                                     <a href="javascript:void(0)" id="fb_login_btn" class="btn btn-facebook"><i
                                             class="icon-facebook"></i>
@@ -765,7 +767,7 @@ margin: 0 0 5px 0;padding: 7px;" type="email"  name="email_address" id="username
 
                         Not ready to signup yet? Feel free to browse some other popular site sections!
                     </div>
-                    <a class="join" href="<?php echo(base_url()); ?>landing/user_register">Join Now FREE!</a>
+                    <a class="join" href="<?php echo(base_url()); ?>user_register">Join Now FREE!</a>
                 </div>
             </div>
 

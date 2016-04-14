@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon"
-          href="<?php base_url(); ?>../assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
+          href="<?php base_url(); ?>assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
 <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700'
           rel='stylesheet' type='text/css'>
@@ -20,47 +20,47 @@
           content="Demo - Realestate CMS - A Commercial CMS powered by Eicrasoft Ltd, jQuery and 960grid">
     <title>Land|GIS</title>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
-    <script type="" src="../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jquery/jquery-1-9-1/jquery.js"></script>
+    <script type="" src="assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/js/slicker.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/js/common.js"></script>
+            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/js/slicker.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/vendor/scripts/js/common.js"></script>
    
      <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
         media="screen"
         rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
         media="screen" rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
+        href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
         media="screen" rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/template.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/template.css"
           media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/general.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/general.css"
           media="screen" rel="stylesheet"
           type="text/css">
 
-   <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
+   <script type="" src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
     <script type=""
-            src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
-     <script type="" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
-     <script type="" src="<?php base_url(); ?>../assets/application/modules/Portfolio/js/uploader.js"></script>
+            src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
+     <script type="" src="<?php base_url(); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
+     <script type="" src="<?php base_url(); ?>assets/application/modules/Portfolio/js/uploader.js"></script>
 
 
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
+    <link href="<?php base_url(); ?>assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
+    <link href="<?php base_url(); ?>assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/pagination.css"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/pagination.css"
           media="screen" rel="stylesheet"
           type="text/css">       
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
+    <link href="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
       rel="stylesheet"
       type="text/css">
 
@@ -230,7 +230,7 @@
                     <div class="col-md-7">
                         <div class="logo">
                             <a href="<?php echo(base_url()); ?>"><img
-                                    src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/logo.png"
+                                    src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/logo.png"
                                     alt="Realestate CMS" title="LandSearchGIS" border="0"></a>
                         </div>
                     </div>
@@ -406,7 +406,7 @@
                             <div class="form-field-container">
                                 <div class="clear">
                                     <input type="text" name="username" id="username" value="" size="50"
-                                           title="Enter Your Username"
+                                           title="Enter Your Email address"
                                            class="ui-widget-content ui-corner-all form-control"><br/><span
                                         class="input-errors" id="username_err"></span></div>
                             </div>
@@ -457,15 +457,15 @@
             <div class="col-md-4">
                 <div class="social">
                     <a href="http://www.facebook.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/facebook.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/facebook.png"
                             border="0"
                             title="Facebook"></a>
                     <a href="http://www.twitter.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/twitter.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/twitter.png"
                             border="0"
                             title="Twitter"></a>
                     <a href="https://plus.google.com" target="_blank"><img
-                            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/images/google-plus.png"
+                            src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/images/google-plus.png"
                             border="0"
                             title="Google Plus"></a>
                 </div>
@@ -477,6 +477,6 @@
 
 <div class="go-top"><a href="#top" id="scroll-top"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
 <script type="text/javascript"
-        src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/scroll.js"></script>
+        src="<?php base_url(); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/scroll.js"></script>
 </body>
 </html>

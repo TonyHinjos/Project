@@ -219,14 +219,14 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
                 <ul class="btn-group">
-                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span>Anthony
+                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span><strong class="font-bold"><?php echo($this->session->userdata('first_name')." ".$this->session->userdata('surname')); ?></strong>
                     </li>
-                    <li class="btn">&nbsp;<a href="http://demo.logisticsscript.com/Members/index/profile"><i
-                                class="fa fa-user"></i><span>User</span></a></li>
-                    <li class="btn"><a href="<?php echo(base_url()); ?>login" target="_blank"><i class="fa fa-eye"></i>
-                            <span>Public View</span></a></li>
-                    <li class="btn"><a href="<?php echo (base_url()); ?>login/logout"><i
-                                class="fa fa-power-off"></i> <span>Log Out</span></a></li>
+                    <li class="btn">&nbsp;<a href="<?php echo(base_url());?>user_profile"><i
+                            class="fa fa-user"></i><span>User</span></a></li>
+                    <li class="btn"><a href="<?php echo(base_url());?>landing" target="_blank"><i class="fa fa-eye"></i>
+                        <span>Public View</span></a></li>
+                    <li class="btn"><a href="<?php echo (base_url()); ?>user_login/logout"><i
+                            class="fa fa-power-off"></i> <span>Log Out</span></a></li>
 
                 </ul>
 
@@ -317,7 +317,6 @@
 </br>
 </br>
 
-
 <div class="container-fluid">
 
     <!-- mega menu -->
@@ -334,9 +333,10 @@
             <div class="grid-container3">
                 <ul>
                     <li><a href="<?php echo(base_url()); ?>user_profile" class=""><i
-                                class="fa fa-credit-card"></i> User Profile</a></li>
+                            class="fa fa-credit-card"></i> User Profile</a></li>
+                    
                     <li><a href="<?php echo(base_url()); ?>change_password" class=""><i
-                                class="fa fa-asterisk"></i> Change Password</a></li>
+                            class="fa fa-asterisk"></i> Change Password</a></li>
                 </ul>
             </div>
 
@@ -347,12 +347,12 @@
 
             <div class="grid-container3">
                 <ul>
-                    <li><a href="http://demo.script4realestate.com/Menu/backend/add" class=""><i
-                                class="fa fa-sitemap"></i> Create New Application</a></li>
+                    <li><a href="<?php echo(base_url()); ?>user_dashboard/make_application" class=""><i
+                            class="fa fa-sitemap"></i> Create New Application</a></li>
                     <!--<li><a href="http://demo.script4realestate.com/Menu/backend/list" class=""><i
                             class="fa fa-gear"></i> Manage Applications</a></li>-->
-                    <li><a href="http://demo.script4realestate.com/Menu/backend/list/draft/0" class=""><i
-                                class="fa fa-check-square-o"></i> Manage Application(s)</a></li>
+                    <li><a href="" class=""><i
+                            class="fa fa-check-square-o"></i> Manage Application(s)</a></li>
                 </ul>
             </div>
 
@@ -364,7 +364,7 @@
             <div class="grid-container3">
                 <ul>
                     <li><a href="<?php base_url(); ?>gis_view" class="" target="_blank"><i class="fa fa-laptop"></i>
-                            Site Preview</a></li>
+                        Site Preview</a></li>
                 </ul>
             </div>
 
@@ -375,82 +375,49 @@
             <div class="grid-container3">
                 <ul>
                     <li><a href="" class="" target="_blank"><i class="fa fa-search"></i>
-                            Land Search</a></li>
+                        Land Search</a></li>
                 </ul>
             </div>
 
         </li>
 
 
-        <li>
+     <li>
             <a href="javascript:void(0);" title=""><i class="fa fa-cube"></i> <span>LAND MAPS</span></a>
 
             <div class="grid-container3">
                 <ul>
                     <li><a href="javascript:void(0);" class=""><i class="fa fa-building"></i>Buy<i
-                                class="text-right pull-right fa fa-angle-down"></i></a>
-
-                        <div class="grid-container3">
-                            <ul>
-                                <li><a href="http://demo.script4realestate.com/Property/backendpro/add" class=""><i
-                                            class="fa fa-institution"></i>Buy New Land Map</a></li>
-                                <li><a href="http://demo.script4realestate.com/Property/backendpro/list" class=""><i
-                                            class="fa fa-star-half-empty"></i> Buy New Land Deed Plan</a></li>
-                                <li><a href="http://demo.script4realestate.com/Property/backendpro/saved" class=""><i
-                                            class="fa fa-cogs"></i>Manage Maps</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-        </li>
-
-
-        <li>
-            <a href="javascript:void(0);" title=""><i class="fa fa-file-text"></i> <span>CONTENT</span></a>
-
-            <div class="grid-container3">
-                <ul>
-                    <li><a href="http://demo.script4realestate.com/Articles/backend/add" class=""><i
-                                class="fa fa fa-pencil"></i> Create an Article</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Articles/backend/list" class=""><i
-                                class="fa fa-th-list"></i> View All Articles</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Articles/backend/list" class=""><i
-                                class="fa fa-gear"></i> Manage Articles</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Articles/backend/list/link/1" class=""><i
-                                class="fa fa-link"></i> Link page with Menu</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Articles/backend/list/draft/0" class=""><i
-                                class="fa fa-paste"></i> Publish draft page</a></li>
-                </ul>
-            </div>
-
-        </li>
-
-
-        <!--<li>
-            <a href="javascript:void(0);" title=""><i class="fa fa-cube"></i> <span>REALESTATE</span></a>
-
-            <div class="grid-container3">
-                <ul>
-                    <li><a href="javascript:void(0);" class=""><i class="fa fa-building"></i> Property Management<i
                             class="text-right pull-right fa fa-angle-down"></i></a>
 
                         <div class="grid-container3">
                             <ul>
-                                <li><a href="http://demo.script4realestate.com/Property/backendpro/add" class=""><i
-                                        class="fa fa-institution"></i> Add New Property</a></li>
-                                <li><a href="http://demo.script4realestate.com/Property/backendpro/list" class=""><i
-                                        class="fa fa-cogs"></i> Manage Properties</a></li>
-                                <li><a href="http://demo.script4realestate.com/Property/backendpro/saved" class=""><i
-                                        class="fa fa-star-half-empty"></i> Favorite Property List</a></li>
+                                <li><a href="" class=""><i
+                                        class="fa fa-institution"></i>Buy New Land Map</a></li>
+                                <li><a href="" class=""><i
+                                        class="fa fa-star-half-empty"></i> Buy New Land Deed Plan</a></li>
+                                <li><a href="" class=""><i
+                                        class="fa fa-cogs"></i>Manage Maps</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
 
-        </li>-->
+        </li>
+
+
+
+
+
+
+
+
+
+
+        
+       
+       
 
 
         <li>
@@ -458,12 +425,11 @@
 
             <div class="grid-container3">
                 <ul>
-                    <li><a href="http://demo.logisticsscript.com/Projects/index/filepreview" class=""><i
-                                class="fa fa-clipboard"></i> File Management</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Poll/backendpoll/list" class=""><i
-                                class="fa fa-bar-chart-o"></i> Poll Manager</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Comment/backendcomment/list" class=""><i
-                                class="fa fa-comments-o"></i> Comment Manager</a></li>
+                    <li><a href="" class=""><i
+                            class="fa fa-clipboard"></i> File Management</a></li>
+                    <li><a href="" class=""><i
+                            class="fa fa-bar-chart-o"></i> Poll Manager</a></li>
+                    
                 </ul>
             </div>
 
@@ -474,24 +440,24 @@
 
             <div class="grid-container3">
                 <ul>
-                    <li><a href="http://demo.logisticsscript.com/Invoice/backend/list" class=""><i
-                                class="fa fa-ticket"></i> Manage Invoices<i
-                                class="text-right pull-right fa fa-angle-down"></i></a>
+                    <li><a href="" class=""><i
+                            class="fa fa-ticket"></i> Manage Invoices<i
+                            class="text-right pull-right fa fa-angle-down"></i></a>
 
                         <div class="grid-container3">
                             <ul>
-                                <li><a href="http://demo.logisticsscript.com/Invoice/backend/list/status/1" class=""><i
-                                            class="fa fa-check-circle"></i> Paid</a></li>
-                                <li><a href="http://demo.logisticsscript.com/Invoice/backend/list/status/2" class=""><i
-                                            class="fa fa-flag"></i> Unpaid</a></li>
-                                <li><a href="http://demo.logisticsscript.com/Invoice/backend/list/status/0" class=""><i
-                                            class="fa fa-times-circle"></i> Cancelled</a></li>
+                                <li><a href="" class=""><i
+                                        class="fa fa-check-circle"></i> Paid</a></li>
+                                <li><a href="" class=""><i
+                                        class="fa fa-flag"></i> Unpaid</a></li>
+                                <li><a href="" class=""><i
+                                        class="fa fa-times-circle"></i> Cancelled</a></li>
                             </ul>
                         </div>
                     </li>
-
-                    <li><a href="http://demo.script4realestate.com/Invoice/backend/quotelist" class=""><i
-                                class="fa fa-file-text-o"></i> Manage Quotation(s)</a></li>
+                   
+                    <li><a href="" class=""><i
+                            class="fa fa-file-text-o"></i> Manage Quotation(s)</a></li>
 
                 </ul>
             </div>
@@ -503,12 +469,12 @@
 
             <div class="grid-container3">
                 <ul>
-                    <li><a href="http://demo.logisticsscript.com/Geo/country/list" class=""><i class="fa fa-globe"></i>
-                            Country Management</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Geo/state/list" class=""><i
-                                class="fa fa-crosshairs"></i> State Management</a></li>
-                    <li><a href="http://demo.logisticsscript.com/Geo/city/list" class=""><i
-                                class="fa fa-map-marker"></i> City/Area Management</a></li>
+                    <li><a href="" class=""><i class="fa fa-globe"></i>
+                        County Management</a></li>
+                    <li><a href="" class=""><i
+                            class="fa fa-crosshairs"></i> State Management</a></li>
+                    <li><a href="" class=""><i
+                            class="fa fa-map-marker"></i> City/Area Management</a></li>
                 </ul>
             </div>
 

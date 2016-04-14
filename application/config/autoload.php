@@ -63,6 +63,10 @@ $autoload['libraries'] = array('database', 'session','email');
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+$autoload['drivers'] = array("session");
+
+
+
 
 $autoload['helper'] = array('url', 'file', 'user');
 

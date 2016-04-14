@@ -65,7 +65,9 @@ class User_model extends CI_Model
             return $result->result_array();
         }
         else{
+            //echo'<div class="alert alert-dismissable alert-danger"><small>email address or password is incorrect</small></div>';
             return null;
+
         }
     }
 

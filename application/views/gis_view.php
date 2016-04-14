@@ -38,12 +38,13 @@
           href="<?php base_url(); ?>assets/data/adminImages/headerImages/1369722780_favicon.ico">
     <meta name="keywords"
           content="Demo - Logistics, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
-    <meta name="description" content="network,location,find location,our network,area">
+    <meta name="description" content="location,find location,our network,area">
     <title>Land|GIS</title>
     <script style="" type="" src="<?php base_url(); ?>assets/gis/js/jquery_002.js"></script>
     <script type="" src="<?php base_url(); ?>assets/gis/js/dropdown.js"></script>
     <script type="" src="<?php base_url(); ?>assets/gis/js/jquery-ui.js"></script>
     <script type="" src="<?php base_url(); ?>assets/gis/js/jquery.js"></script>
+    <script type="" src="<?php base_url(); ?>assets/gis/js/jquery-2.1.0.min.js"></script>
     <script type="" src="<?php base_url(); ?>assets/gis/js/slicker.js"></script>
     <script type="" src="<?php base_url(); ?>assets/gis/js/common_002.js"></script>
     <script type="" src="<?php base_url(); ?>assets/user/js/jquery_003.js"></script>
@@ -254,15 +255,15 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
                 <ul class="btn-group">
-                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span>Anthony
+                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span><strong
+                            class="font-bold"><?php echo($this->session->userdata('first_name') . " " . $this->session->userdata('surname')); ?></strong>
                     </li>
-                    <li class="btn">&nbsp;<a href="http://demo.logisticsscript.com/Members/index/profile"><i
+                    <li class="btn">&nbsp;<a href="<?php echo(base_url()); ?>user_profile"><i
                                 class="fa fa-user"></i><span>User</span></a></li>
                     <li class="btn"><a href="<?php echo(base_url()); ?>login" target="_blank"><i class="fa fa-eye"></i>
                             <span>Public View</span></a></li>
-                    <li class="btn"><a href="<?php echo (base_url()); ?>login/logout"><i
+                    <li class="btn"><a href="<?php echo(base_url()); ?>user_login/logout"><i
                                 class="fa fa-power-off"></i> <span>Log Out</span></a></li>
-
                 </ul>
 
             </div>
@@ -452,7 +453,7 @@
 
         </li>
 
-        
+
         <li>
             <a href="javascript:void(0);" title=""><i class="fa fa-gift"></i> <span>MODULES</span></a>
 
@@ -515,43 +516,58 @@
         </li>
     </ul>
     <!--/ mega menu -->    </div>
-    <script type="text/javascript">
-$(function() {
-    
-    //autocomplete
-    $(".auto").autocomplete({
-        source: "search.php",
-        minLength: 1
-    });             
+<script type="text/javascript">
+    $(function () {
 
-});
+        //autocomplete
+        $(".auto").autocomplete({
+            source: "http://localhost/landgis/search.php",
+            minLength: 3
+        });
+
+    });
 </script>
 
-
 <div id="banner-inner">
-    <div class="container">
-    
-        <div class="col-md-12">
+    <div class="row">
+
+        <div class="col-md-6 col-xs-6">
 
     <span class="btn-group"> 
-    <div style="margin-left: -450px"class="text-center">
-                   <form  action='' method='post'>
-                  <input type='text' name='parcel_number' value='' class='auto' placeholder="Parcel number">
-                     </form>
-                       <a 
-                    href="" class="btn-3"><span
-                        class="glyphicon glyphicon-map-marker"></span> Find Locations</a>
-                        <a 
-                    href="" class="btn-2"><span 
-                        class="glyphicon glyphicon-time"></span> Buy Land Map</a>
-                    <a href="" class="btn-1"><span
-                        class="glyphicon glyphicon-donate"></span>Donations</a> 
+    <div style="margin-left: -250px" class="text-center" >
+        <form action='' method='post'>
+            <input type='text' name='parcel_number' value='' class='auto' placeholder="Parcel number" class='required'
+                   class="form-control">
 
-                        </div>
+            <input style="background: #F63E28;color: #FFF;" class="btn-3"  class="glyphicon glyphicon-map-marker" type="submit" value="Find Locations">
+             
+            <a href="" class="btn-1"><span
+                class="glyphicon glyphicon-donate"></span>Donations</a>
+
+        </form>
+      </div>  
+       </span>
+
+    </div>
+    
+    <div class="col-md-6 col-xs-6">
+    <span class="btn-group"> 
+
+    <div style="margin-left: -220px" class="text-center">
+        <form action='' method='post'>
+            <input type='text' name='parcel_number' value='' class='auto' placeholder="Parcel number" class='required'
+                   class="form-control">
+            <input style="background: #3B5997;color: #FFF;" class="btn-2"  class="glyphicon glyphicon-map-time" type="submit" value="Buy Land Map">    
+
+        </form>
+        
+
+    </div>
                         
-           </span>  
+           </span>
+           </div>
 
-                   
+
         </div>
     </div>
 </div>

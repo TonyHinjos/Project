@@ -6,75 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon"
-          href="<?php base_url(); ?>../assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
+          href="<?php echo(base_url()); ?>assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
     <meta name="keywords"
           content="Demo - Logistics, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
     <meta name="description" content="Demo - Logistics - A Commercial CMS powered by Eicrasoft Ltd, jQuery and 960grid">
     <title>Land|GIS</title>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/jquery_003.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/jquery-ui.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/common.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/slicker.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/dropdown.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/jquery.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/ddslick.js"></script>
+    <script type="text/javascript"
+            src="<?php echo(base_url()); ?>assets/user/js/jquery-1.11.1.js"></script>
+    
+    <!--<script src="<?php echo(base_url()); ?>assets/user/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/js/slicker.js"></script>
+    <!--<script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/js/common.js"></script>-->
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery_003.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/common.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/slicker.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/dropdown.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/ddslick.js"></script>
+   
+    <script type="text/javascript" src="assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
 
-    <link href="<?php base_url(); ?>../assets/user/css/bootstrap.css" media="screen" rel="stylesheet"
-          type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/jquery-ui.css" media="screen" rel="stylesheet"
-          type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/mega-menu.css" media="screen" rel="stylesheet"
-          type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/mega-menu-black.css" media="screen" rel="stylesheet"
-          type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/font-awesome.css" media="screen" rel="stylesheet"
-          type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/floatingbar.css" media="screen" rel="stylesheet"
-          type="text/css">
-    <!--<link href="<?php base_url(); ?>assets/user/css/template.css" media="screen" rel="stylesheet"
-          type="text/css">
-          <link href="<?php base_url(); ?>assets/user/css/members.css" media="screen" rel="stylesheet"
-          type="text/css">-->
-
-
-    <script type="" src="<?php base_url(); ?>../assets/user/js/kendo_002.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/kendo_003.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/kendo.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/kendo.js"></script>
-    <script type="" src="<?php base_url(); ?>../assets/user/js/uploader.js"></script>
+    <script type="text/javascript"
+            src="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
+    <script type="text/javascript"
+            src="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
+            <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-ui-1.10.4.min.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-ui.min.js"></script>
 
 
-    <link href="<?php base_url(); ?>../assets/user/css/kendo.css" media="screen" rel="stylesheet"
+    
+
+    <link href="<?php echo(base_url()); ?>assets/user/css/bootstrap.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/kendo_002.css" media="screen" rel="stylesheet"
+          <link href="<?php echo(base_url()); ?>assets/user/css/jquery-ui.min.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/stylesheet.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/jquery-ui.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/mega-menu.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/mega-menu-black.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/font-awesome.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/floatingbar.css" media="screen" rel="stylesheet"
           type="text/css">
 
-    <script>
-        function qToolTipFunctions() {
-            $(document).tooltip({
-                items: "input[title],textarea[title],div[title],td[title],span[title],img[title],a[title],li[title]",
-                //show: { effect: "slide" },
-                tooltipClass: "jui-tooltip",
-                content: function () {
-                    var element = $(this);
-                    if (element.is("[title]") && !element.hasClass('noTitle')) {
-                        return element.attr("title");
-                    }
-                },
-                track: true
-            });
-        }
-        $(document).ready(function () {
-            kendo.culture("en-US");
-            qToolTipFunctions();
-        });
-    </script>
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--<link href="<?php echo(base_url()); ?>assets/user/css/core.css" media="screen"
+          rel="stylesheet" type="text/css">-->
+    <link href="<?php echo(base_url()); ?>assets/user/css/components1.css" media="screen"
+          rel="stylesheet" type="text/css">
+    <!--<link href="<?php echo(base_url()); ?>assets/user/css/pages.css" media="screen"
+          rel="stylesheet" type="text/css">-->
+    <link href="<?php echo(base_url()); ?>assets/user/css/elements.css" media="screen"
+          rel="stylesheet" type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/template.css" media="screen" rel="stylesheet"
+          type="text/css">
+          <link href="<?php echo(base_url()); ?>assets/user/css/members.css" media="screen" rel="stylesheet"
+          type="text/css">
+          <link
+        href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
+        media="screen"
+        rel="stylesheet" type="text/css">
+    <link
+        href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
+        media="screen" rel="stylesheet" type="text/css">
+    <link
+        href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
+        media="screen" rel="stylesheet" type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/template.css"
+          media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/general.css"
+          media="screen" rel="stylesheet"
+          type="text/css">
+
+
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo_002.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo_003.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/uploader.js"></script>
+    <!--<script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery_006.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/bootstrap.js"></script>-->
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
+    <script type="text/javascript"
+            src="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
+     <script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
+     <script type="text/javascript" src="<?php echo(base_url()); ?>assets/application/modules/Portfolio/js/uploader.js"></script>
+
+
+
+    <link href="<?php echo(base_url()); ?>assets/user/css/kendo.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/kendo_002.css" media="screen" rel="stylesheet"
+          type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/user/css/stylesheet.css" media="screen" rel="stylesheet"
+          type="text/css">
+          <link href="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
+          rel="stylesheet" type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
+          rel="stylesheet" type="text/css">
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/pagination.css"
+          media="screen" rel="stylesheet"
+          type="text/css">       
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
+      rel="stylesheet"
+      type="text/css">
+
+   
+
     <style id="css-ddslick" type="text/css">.dd-select {
             border-radius: 0px;
             border: solid 1px #ddd;
@@ -210,22 +252,7 @@
             }
         }
 
-        //Dropdown Básico
-        $('#dropdownBasico').ddslick({
-            data: ddData,
-            width: 220,
-            selectText: "<i class='fa fa-cog'></i> General Settings",
-            defaultSelectedIndex: dIndex,
-            truncateDescription: true,
-            imagePosition: "left",
-            showSelectedHTML: true,
-            clickOffToClose: true,
-            onSelected: function (data) {
-                //Llama función que hace algo
-                //console.log(data);
-                window.location.href = data.selectedData.link_value;
-            }
-        });
+        
     });
 </script>
 
@@ -234,7 +261,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
                 <ul class="btn-group">
-                    <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span><strong class="font-bold"><?php echo($this->session->userdata('first_name')." ".$this->session->userdata('surname')); ?></strong>
+                   <li class="btn active"><i class="fa fa-globe"></i> <span>Welcome:</span><strong class="font-bold"><?php echo($this->session->userdata('first_name')." ".$this->session->userdata('surname')); ?></strong>
                     </li>
                     <li class="btn">&nbsp;<a href="<?php echo(base_url());?>user_profile"><i
                             class="fa fa-user"></i><span>User</span></a></li>
@@ -242,6 +269,7 @@
                         <span>Public View</span></a></li>
                     <li class="btn"><a href="<?php echo (base_url()); ?>user_login/logout"><i
                             class="fa fa-power-off"></i> <span>Log Out</span></a></li>
+
                 </ul>
 
             </div>
@@ -331,34 +359,6 @@
 </br>
 </br>
 
-<!--<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
-                <div class="logo"><img src="<?php base_url(); ?>assets/user/img/header_logo.jpg"
-                                       height="60">
-
-                    <h1>User Control Panel</h1></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-                <div style="width: 220px;" class="dd-container" id="dropdownBasico">
-                <div style="width: 220px; background: rgb(238, 238, 238) none repeat scroll 0% 0%;"class="dd-select">
-                         <input class="dd-selected-value" value="" type="hidden">
-                         <a
-                            class="dd-selected"><i class="fa fa-cog"></i> General Settings</a>
-                            <span
-                            class="dd-pointer dd-pointer-down"></span>
-                    </div>
-                    <ul style="width: 220px;" class="dd-options dd-click-off-close">
-                        <li><a class="dd-option"> <label class="dd-option-text"><i class="fa fa-user"></i> User Profile</label></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--<marquee style="color: green">You can now conduct an official land search,buy land map and use the LR NO GIS here. Click on the module you require below and pay online now.</marquee>
-        </div>
-    </div>
-</header>-->
 
 
 <div class="container-fluid">
@@ -452,18 +452,6 @@
 
 
 
-
-
-
-
-
-
-
-        
-       
-       
-
-
         <li>
             <a href="javascript:void(0);" title=""><i class="fa fa-gift"></i> <span>MODULES</span></a>
 
@@ -526,35 +514,34 @@
     </ul>
     <!--/ mega menu -->    </div>
 <!--Header End-->
-
 <!-- Body Start-->
 <div class="container-fluid">
     <div class="row">
 
         <div class="col-lg-9 col-md-12"> <!-- col-lg-12 -->
             <script type="text/javascript"
-                    src="<?php base_url(); ?>../assets/user/js/easyResponsiveTabs.js"></script>
-            <link href="<?php base_url(); ?>../assets/user/css/easy-responsive-tabs.css" media="screen"
+                    src="<?php echo(base_url()); ?>assets/user/js/easyResponsiveTabs.js"></script>
+            <link href="<?php echo(base_url()); ?>assets/user/css/easy-responsive-tabs.css" media="screen"
                   rel="stylesheet" type="text/css">
-            <link href="<?php base_url(); ?>../assets/user/css/admin.css" media="screen" rel="stylesheet"
+            <link href="<?php echo(base_url()); ?>assets/user/css/admin.css" media="screen" rel="stylesheet"
                   type="text/css">
             <script type="text/javascript"
-                    src="<?php base_url(); ?>../assets/user/js/jquery_002.js"></script>
+                    src="<?php echo(base_url()); ?>assets/user/js/jquery_002.js"></script>
 
             <div class="welcome-panel">
-                <h2>Dashboard</h2>
+                <h2 style="color:black">Dashboard</h2>
 
                 <div class="row">
 
                     <div class="col-md-6 col-xs-6">
                         <div class="row">
                             <div class="col-md-2 col-xs-3">
-                                <img src="<?php base_url(); ?>../assets/user/img/avatar.png"
+                                <img src="<?php echo(base_url()); ?>assets/user/img/avatar.png"
                                      class="img-responsive">
                             </div>
                             <div class="col-md-10 col-xs-9">
-                                <p>
-                                    <strong> User Profile</strong><br>
+                                 <p>
+                                   <strong> User Profile</strong><br>
                                    <strong class="font-bold"> User Name : <span style="color:#0088DD"><?php echo($this->session->userdata('first_name')." ".$this->session->userdata('surname')); ?></span></strong><br>
                                     <strong class="font-bold"> Email :<span style="color:#0088DD"> <?php echo($this->session->userdata('email_address')); ?></span></strong><br>
                                    <strong> Payment Gateway: <span style="color:#0088DD">pesapal.com</span></strong><br>
@@ -613,7 +600,7 @@
             <div class="card-box widget-user">
                 <div>
                     <div>
-                        <h4 class="m-t-0 m-b-5">Popular Services</h4>
+                        <h4 style="color:black"class="m-t-0 m-b-5">Popular Services</h4>
                         <ul class="m-l-0">
                             <li><a href="">Official Land Search</a></li>
                             <li><a href="">GIS Location</a></li>
@@ -624,7 +611,7 @@
             <div class="card-box widget-user">
                 <div>
                     <div>
-                        <h4 class="m-t-0 m-b-5">Quick Links</h4>
+                        <h4 style="color:black" class="m-t-0 m-b-5">Quick Links</h4>
                         <ul class="m-l-0">
                             <li><a target="_blank" href="">Conduct Official Land Search</a></li>
                             <li><a target="_blank" href="">Buy Land Map</a></li>
@@ -641,112 +628,107 @@
     <!--Content End-->
 </div>
 
-            <div class="wrapper">
-                <!--<link href="<?php base_url(); ?>../assets/user/css/bootstrap2.css" media="screen"
-                  rel="stylesheet" type="text/css">-->
-                <link href="<?php base_url(); ?>../assets/user/css/core.css" media="screen"
-                      rel="stylesheet" type="text/css">
-                <link href="<?php base_url(); ?>../assets/user/css/components1.css" media="screen"
-                      rel="stylesheet" type="text/css">
-                <link href="<?php base_url(); ?>../assets/user/css/pages.css" media="screen"
-                      rel="stylesheet" type="text/css">
-                <link href="<?php base_url(); ?>../assets/user/css/elements.css" media="screen"
-                      rel="stylesheet" type="text/css">
+<!--main form-->
+<div class="container-fluid">
+    <div class="row">
+        <!--Tree Menu Start-->
+                <!--Tree Menu End-->
+        
+        <!--Content Start-->
+        <div class=""> <!-- col-lg-12 -->
+            <!--<link href="view%20articles_files/colorbox.css" media="screen" rel="stylesheet" type="text/css"><script type="" src="view%20articles_files/jquery.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[rel='preview_btn']").colorbox({width:"98%", height:"98%",slideshow:false, transition:"fade"}); 
+});
+</script>
 
 
-                <script src="<?php base_url(); ?>../assets/user/js/jquery_006.js"></script>
-                <script src="<?php base_url(); ?>../assets/user/js/bootstrap.js"></script>
-
-
-                <div class="container" id="content">
-
-                    <!-- Page-Title -->
-                    <div class="row">
-                        <div style="margin-left:550px" class="col-sm-12">
-                            <h4 class="page-title">Make Application</h4>
-                        </div>
-                    </div>
-                    <!-- Page-Title -->
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="panel panel-default panel-blog">
-                                <div class="panel-body">
-                                    <h3 class="blogsingle-title">Official land search- leasehold/ freehold</h3>
-
-
-                                    <div class="mb20"></div>
-
-                                    <p>Before you deal with any land transaction you are advised to to conduct an
-                                        official land search here to verify ownership and any pending encumbrances.
-                                        Currently, It takes a second for the full search to be complete, and an Official
-                                        Clear Search document issued.</p>
-
-                                    <p>Before you perform a land search it is important to note the following:</p>
-                                    <ol>
-                                        <li>1. Business with the word "Enterprises" at the end cannot use Initials e.g
-                                            J.K and Brian Enterprises
-                                        </li>
-                                        <li>2. Names with the word “Foundation” must be registered as Companies limited
-                                            by guarantee
-                                        </li>
-                                        <li>3. Names with “Groups” , "projects" and “Holdings” must be limited.(Ahadi
-                                            group limited)
-                                        </li>
-                                        <li>4. Names with “Universities” must be limited.
-                                        </li>
-                                        <li>5. Single words are not accepted.</li>
-                                        <li>6. Offensive or abusive words are not allowed either. Offensive words in vernacular (mother tongue) are not allowed either.
-                                        </li>
-                                        <li>7. Political names e.g (Nairobi youth alliance) are not allowed</li>
-                                        <li>8. Numerics are not allowed not unless its the current year.</li>
-                                        <li>9. Names starting with the word “Kenya” are only reserved for the
-                                            government.
-                                        </li>
-                                        <li>10. Names with ‘Church’ and ‘Ministry or Ministries’ are not allowed</li>
-                                        <li>11. Names with “Trust”, “Foundation”, Programmes are not allowed</li>
-                                        
-                                    </ol>
-
-
-                                    <div class="alert alert-danger">
-                                        Only one lr number to be submitted per application. applications with more than one
-                                        Land search will be rejected.
-                                    </div>
-                                    
-                                    <div class="alert alert-danger">
-                                        Land searches will can be processed anytime at your own convenient time.
-                                    </div>
-
-                                    <div class="alert alert-danger">
-                                        Applications without appropriate passport photos will be rejected.
-                                    </div>
-
-                                    <div class="alert alert-info">
-                                        For queries regarding payment kindly call this number 0721567977.
-                                    </div>
-                                </div>
-                                <!-- panel-body -->
-                                <div class="panel-footer">
-                                    <a class="btn btn-primary waves-effect w-md waves-light"
-                                       href="<?php echo(base_url()); ?>user_dashboard/search_form">Apply Now</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!--Display a sidebar with information from the site config-->
-                        
-
-                    </div>
-                </div>
+<div class="container-fluid">
+    <div class="tool-bar">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                <h1><i class="fa fa-file-text action"><i class="fa fa-check-square-o"></i></i> Land Search Cost</h1>
             </div>
-
-
             
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-right btn-groups">
+                                                <a class="btn btn-primary"><i ></i>KSHS.500</a>
+                                                                            </div>
+        </div>
+    </div>
+    
+    <section class="content">
+        <div id="button_top_bar"></div>
+        <div class="text-center"class="well">
+            
+       <span style="color:#6CBE42">Review Your Entry</span></br>
 
+     <span style="color:#36A9E1"> Please review your entry below. Click Submit button to finish.</span>
+  </div>
       
+        <div>
+          <div id="form_container" class="WarpShadow WLarge WNormal">
+        <form  method="post" onsubmit="document.getElementById('review_submit').value='Saving. Please wait....';">
+
+        <div class="panel panel-default">
+            
+            <div class="">
+              <?php print_r($query);?>
+               <table id="machform_review_table" cellpadding="0" cellspacing="0" border="0" width="100%">
+              
+<tbody >
+
+
+
+<tr>
+
+<td style="color:#6CBE42;line-height:50px;" class="mf_review_label" width="40%">Land Title Number</td>
+<td style="color:#6CBE42;"class="mf_review_value" width="60%"></td>
+</tr>
+
+<tr class="alt">
+<td style="color:#6CBE42;line-height:50px;" class="mf_review_label" width="40%">Land Parcel Number</td>
+
+<td style="color:#6CBE42;"class="mf_review_value" width="60%"></td>
+</tr>
+
+<tr>
+<td style="color:#6CBE42;line-height:50px;" class="mf_review_label" width="40%">Purpose of the Search</td>
+<td style="color:#6CBE42;" class="mf_review_value" width="60%"></td>
+</tr>
+<tr>
+ <td  id="li_buttons">
+                
+              <input id="review_submit" class="btn-global" name="review_submit" value="Submit" type="submit">
+              <!--<span title="Edit" db_user_search_id='<?php echo $search_review->user_search_id ?>' class="btn-global" name="review_back" value="Edit" type="submit" ><a  style="color: #FFF;" href="<?php echo (base_url()); ?>user_search/edit/<?=$search_review->user_search_id?>/<?=$search_review->title_number?>">Edit</a></span>-->
+    
+
+            <td>
+
+</tr>
+ 
+
+</tbody></table>
+           
+        </div>
+        
+
+    </div></form>
+
+    
+        </div>  
+
+
+        </div>
+    </section>
+</div>
+    
+        </div>
+        <!--Content End-->
+    </div>
+</div>
+
+
 <!-- Body End -->
 
 
@@ -766,6 +748,7 @@
         </div>
     </div>
 </footer>
+
 <!--Footer End-->
 <style type="text/css">
     .go-top a {
@@ -799,8 +782,9 @@
 
 <div class="go-top"><a href="#top" id="scroll-top"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
 <script type="text/javascript"
-        src="<?php base_url(); ?>assets/user/js/scroll2.js"></script>
+        src="<?php echo(base_url()); ?>assets/user/js/scroll2.js"></script>
 
 <div class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="log"></div>
+
 </body>
 </html>

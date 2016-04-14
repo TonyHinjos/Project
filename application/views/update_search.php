@@ -1,117 +1,118 @@
 <!DOCTYPE html>
 <html class="k-ff k-ff44" dir="ltr" lang="en">
 <head>
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon"
-          href="<?php base_url(); ?>../assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
+          href="<?php echo(base_url()); ?>assets/data/adminImages/headerImages/1369722780_favicon.ico"/>
     <meta name="keywords"
           content="Demo - Logistics, CMS, Content Management System, Open source CMS, Zend Framework, Zend Framework CMS, jQuery, 960gs, 960 Grid System, Layout Editor">
     <meta name="description" content="Demo - Logistics - A Commercial CMS powered by Eicrasoft Ltd, jQuery and 960grid">
     <title>Land|GIS</title>
     <script type="text/javascript"
-            src="<?php base_url(); ?>../assets/user/js/jquery-1.11.1.js"></script>
+            src="<?php echo(base_url()); ?>assets/user/js/jquery-1.11.1.js"></script>
     
-    <!--<script src="<?php base_url(); ?>../assets/user/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/vendor/scripts/js/slicker.js"></script>
-    <!--<script type="text/javascript" src="<?php base_url(); ?>../assets/vendor/scripts/js/common.js"></script>-->
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery_003.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/common.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/slicker.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/dropdown.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/ddslick.js"></script>
+    <!--<script src="<?php echo(base_url()); ?>assets/user/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/js/slicker.js"></script>
+    <!--<script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/js/common.js"></script>-->
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery_003.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/common.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/slicker.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/dropdown.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/ddslick.js"></script>
    
-    <script type="text/javascript" src="../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
+    <script type="text/javascript" src="assets/application/layouts/scripts/realestate_default/vendor/bootstrap/js/dropdown.js"></script>
 
     <script type="text/javascript"
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
+            src="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.js"></script>
     <script type="text/javascript"
-            src="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
-            <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery-ui-1.10.4.min.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery-2.1.0.min.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery-ui.min.js"></script>
+            src="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/js/jquery.idTabs.min.js"></script>
+            <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-ui-1.10.4.min.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery-ui.min.js"></script>
 
 
     
 
-    <link href="<?php base_url(); ?>../assets/user/css/bootstrap.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/bootstrap.css" media="screen" rel="stylesheet"
           type="text/css">
-          <link href="<?php base_url(); ?>../assets/user/css/jquery-ui.min.css" media="screen" rel="stylesheet"
+          <link href="<?php echo(base_url()); ?>assets/user/css/jquery-ui.min.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/jquery-ui.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/jquery-ui.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/mega-menu.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/mega-menu.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/mega-menu-black.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/mega-menu-black.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/font-awesome.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/font-awesome.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/floatingbar.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/floatingbar.css" media="screen" rel="stylesheet"
           type="text/css">
 
-    <!--<link href="<?php base_url(); ?>../assets/user/css/core.css" media="screen"
+    <!--<link href="<?php echo(base_url()); ?>assets/user/css/core.css" media="screen"
           rel="stylesheet" type="text/css">-->
-    <link href="<?php base_url(); ?>../assets/user/css/components1.css" media="screen"
+    <link href="<?php echo(base_url()); ?>assets/user/css/components1.css" media="screen"
           rel="stylesheet" type="text/css">
-    <!--<link href="<?php base_url(); ?>../assets/user/css/pages.css" media="screen"
+    <!--<link href="<?php echo(base_url()); ?>assets/user/css/pages.css" media="screen"
           rel="stylesheet" type="text/css">-->
-    <link href="<?php base_url(); ?>../assets/user/css/elements.css" media="screen"
+    <link href="<?php echo(base_url()); ?>assets/user/css/elements.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/template.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/template.css" media="screen" rel="stylesheet"
           type="text/css">
-          <link href="<?php base_url(); ?>../assets/user/css/members.css" media="screen" rel="stylesheet"
+          <link href="<?php echo(base_url()); ?>assets/user/css/members.css" media="screen" rel="stylesheet"
           type="text/css">
           <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
+        href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/bootstrap/css/bootstrap.min.css"
         media="screen"
         rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
+        href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/font-awesome/css/font-awesome.min.css"
         media="screen" rel="stylesheet" type="text/css">
     <link
-        href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
+        href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/vendor/scripts/jui/jui-1-10-3/green/jquery-ui.custom.css"
         media="screen" rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/template.css"
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/template.css"
           media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/general.css"
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/general.css"
           media="screen" rel="stylesheet"
           type="text/css">
 
 
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/kendo_002.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/kendo_003.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/kendo.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/kendo.js"></script>
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/uploader.js"></script>
-    <!--<script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/jquery_006.js"></script>-->
-    <!--<script type="text/javascript" src="<?php base_url(); ?>../assets/user/js/bootstrap.js"></script>-->
-    <script type="text/javascript" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo_002.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo_003.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/kendo.js"></script>
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/uploader.js"></script>
+    <!--<script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/jquery_006.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo(base_url()); ?>assets/user/js/bootstrap.js"></script>-->
+    <script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/js/kendo.web.min.js"></script>
     <script type="text/javascript"
-            src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
-     <script type="text/javascript" src="<?php base_url(); ?>../assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
-     <script type="text/javascript" src="<?php base_url(); ?>../assets/application/modules/Portfolio/js/uploader.js"></script>
+            src="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en.min.js"></script>
+     <script type="text/javascript" src="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/js/cultures/kendo.culture.en-US.min.js"></script>
+     <script type="text/javascript" src="<?php echo(base_url()); ?>assets/application/modules/Portfolio/js/uploader.js"></script>
 
 
 
-    <link href="<?php base_url(); ?>../assets/user/css/kendo.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/kendo.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/kendo_002.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/kendo_002.css" media="screen" rel="stylesheet"
           type="text/css">
-    <link href="<?php base_url(); ?>../assets/user/css/stylesheet.css" media="screen" rel="stylesheet"
+    <link href="<?php echo(base_url()); ?>assets/user/css/stylesheet.css" media="screen" rel="stylesheet"
           type="text/css">
-          <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
+          <link href="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/src/styles/kendo.common.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
+    <link href="<?php echo(base_url()); ?>assets/vendor/scripts/kendo/src/styles/kendo.metro.css" media="screen"
           rel="stylesheet" type="text/css">
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/pagination.css"
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/pagination.css"
           media="screen" rel="stylesheet"
           type="text/css">       
-    <link href="<?php base_url(); ?>../assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
+    <link href="<?php echo(base_url()); ?>assets/application/layouts/scripts/realestate_default/css/menu.css" media="screen"
       rel="stylesheet"
       type="text/css">
 
@@ -521,13 +522,13 @@
 
         <div class="col-lg-9 col-md-12"> <!-- col-lg-12 -->
             <script type="text/javascript"
-                    src="<?php base_url(); ?>../assets/user/js/easyResponsiveTabs.js"></script>
-            <link href="<?php base_url(); ?>../assets/user/css/easy-responsive-tabs.css" media="screen"
+                    src="<?php echo(base_url()); ?>assets/user/js/easyResponsiveTabs.js"></script>
+            <link href="<?php echo(base_url()); ?>assets/user/css/easy-responsive-tabs.css" media="screen"
                   rel="stylesheet" type="text/css">
-            <link href="<?php base_url(); ?>../assets/user/css/admin.css" media="screen" rel="stylesheet"
+            <link href="<?php echo(base_url()); ?>assets/user/css/admin.css" media="screen" rel="stylesheet"
                   type="text/css">
             <script type="text/javascript"
-                    src="<?php base_url(); ?>../assets/user/js/jquery_002.js"></script>
+                    src="<?php echo(base_url()); ?>assets/user/js/jquery_002.js"></script>
 
             <div class="welcome-panel">
                 <h2 style="color:black">Dashboard</h2>
@@ -537,7 +538,7 @@
                     <div class="col-md-6 col-xs-6">
                         <div class="row">
                             <div class="col-md-2 col-xs-3">
-                                <img src="<?php base_url(); ?>../assets/user/img/avatar.png"
+                                <img src="<?php echo(base_url()); ?>assets/user/img/avatar.png"
                                      class="img-responsive">
                             </div>
                             <div class="col-md-10 col-xs-9">
@@ -800,40 +801,10 @@
             </script>
 
 <script type="text/javascript">
-//  $(function () {
 
-//         //autocomplete
-//         $(".auto").autocomplete({
-//             source: 'http://localhost/landgis/autocomplete.php',
-//             minLength: 1
-//         });
-
-//     });
-
-// function fetch_parcel()
-//   {
-//     var title_number = $('#title_number').val(); //converts to a number
-//      $.ajax({
-//         type: "post",
-//         url: '<?=base_url();?>user_search/fetch_parcel',
-//         cache: false,               
-//         data: "title_number="+title_number,
-        
-//         success: function(data)
-//         {
-//           $('#parcel_number').val(data);
-//          },
-//         error: function()
-//         {                      
-//         }
-//    });
-    
-//   }
 
 
 </script>
-
-          
 
 
             <div class="mod">
@@ -846,16 +817,20 @@
                 <div id="actionMessage">&nbsp;</div>
 
                 <div id="memberFormDiv">
-
-                    <form name="MemberForm" id="MemberForm" role="form" action="<?php echo(base_url()); ?>user_search" method="post" >
-                        <fieldset>
+                   <?php print_r($query->result());?>
+           
+                    <form name="MemberForm" id="MemberForm" id="Edit_transaction" role="form" action="<?php echo(base_url()); ?>user_search/do_edit" method="post" >
+                      <?php foreach ($query->result() as $row): ?>
+                         <fieldset>
                         <fieldset>
 
                             <legend>1420221-001 - 1 . Official Land Search</legend>
 
                             <div>
 
-                               
+                              
+                        <input type="hidden" name="hidden" value=""/>
+                       
 
                                 <div class="form-label-container">
                                     <div class="label_class label_class" style="">
@@ -866,7 +841,9 @@
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" class="auto" id='countryname_1' name="title_number" value="" size="25" placeholder="Enter Title No" class="form-control"  required="" ></span><br/>
+                                               
+<input type="text" class="auto" id='countryname_1' name="title_number" value="<?=$row->title_number?>" size="25" placeholder="Enter Title No" class="form-control"  required="" >
+</span><br/>
                                         
                                     </div>
                                     <div class="form-field-info"></div>
@@ -881,8 +858,10 @@
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<input type="text" id='country_no_1' name="parcel_number"  value="" size="25" class="auto" placeholder="Enter Parcel No" class="form-control" required=""
-></span><br/>
+                                              
+<input type="text" id='country_no_1' name="parcel_number"  value="<?=$row->parcel_number?>" size="25" class="auto" placeholder="Enter Parcel No" class="form-control" required=""
+>
+</span><br/>
                                        
                                     </div>
                                     <div class="form-field-info"></div>
@@ -906,27 +885,32 @@
                                 <div class="form-field-container">
                                     <div class="form-field">
                                               <span class="ui-widget">
-<textarea type="text" name="purpose" id="purpose" title="Please Type your Purpose" cols="25" rows="4" class="editor form-control" required=""></textarea></span><br/>
+                                              
+<textarea type="text" name="purpose" id="purpose" title="Please Type your Purpose" cols="25" rows="4" class="editor form-control" value=""required=""><?=$row->purpose?></textarea>
+</span><br/>
                                         <span class="input-errors" id="address_err"></span>
                                     </div>
                                     <div class="form-field-info"></div>
                                 </div>
-                                
+                                 
                             </div>
+                             <input type="hidden" name="user_search_id" value="<?=$row->user_search_id?>"/>
                             <div class="clear">&nbsp;</div>
 
                         </fieldset>
 
                         <div class="text-center">
                         <a href="javascript:  void(0);" class="reset_btn btn btn-global">Reset</a>
-                        <input class="btn"  type="submit" value="Continue">
+                         
+                        <input class="btn btn-global"  type="submit" value="Continue">
                         <!--<a href="javascript: void(0);" class="add_user_btn btn btn-global">Continue</a>-->
                     </div>
 
                         </fieldset>
                       
-
+                     <?php endforeach; ?>
                     </form>
+
                 </div>
 
                 <div id="dialog_msg" title="Message Dialog"></div>
@@ -934,11 +918,46 @@
                     <div id="progressbar"></div>
                 </div>
             </div>
+
+            
         </div>
         <!-- Content End-->
 
     </div>
 </div>
+<script>
+    $(function(){
+        
+        $("#Edit_transaction").submit(function( event ) {
+           event.preventDefault();
+            var url = $(this).attr('action');
+            console.log(url);
+            
+            $.ajax({
+                url: url,
+                data: $("#Edit_transaction").serialize(),
+                type: $(this).attr('method')
+              }).done(function(data) {
+                  $('#ret').html(data);
+//                  window.location.reload();
+//                $('#do_edit_post')[0].reset();
+              });
+            
+        });
+        
+$( "#datepicker" ).datepicker({
+defaultDate: "+1w",
+changeMonth: true,
+numberOfMonths: 1,
+dateFormat: "yy-mm-dd",
+onClose: function( selectedDate ) {
+$( "#to" ).datepicker( "option", "minDate", selectedDate );
+}
+});
+    });
+
+</script>
+
 
 <!-- Body End -->
 
@@ -961,7 +980,7 @@
 </footer>
 
 <script type="text/javascript"
-        src="<?php base_url(); ?>../assets/js/auto.js"></script>
+        src="<?php echo(base_url()); ?>assets/js/auto.js"></script>
 <!--Footer End-->
 <style type="text/css">
     .go-top a {
@@ -995,7 +1014,7 @@
 
 <div class="go-top"><a href="#top" id="scroll-top"><i class="glyphicon glyphicon-chevron-up"></i></a></div>
 <script type="text/javascript"
-        src="<?php base_url(); ?>assets/user/js/scroll2.js"></script>
+        src="<?php echo(base_url()); ?>assets/user/js/scroll2.js"></script>
 
 <div class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="log"></div>
 </body>

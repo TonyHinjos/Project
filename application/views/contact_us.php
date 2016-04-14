@@ -101,11 +101,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-5 user-links">
-                        Welcome to LandGIS | <a href="<?php echo(base_url()); ?>landing/user_login">Login</a> | <a
-                            href="<?php echo(base_url()); ?>landing/user_register">Register</a></div>
+                        Welcome to LandGIS | <a href="<?php echo(base_url()); ?>user_login">Login</a> | <a
+                            href="<?php echo(base_url()); ?>user_register">Register</a></div>
 
                     <div class="col-xs-7 top-links">
-                        <a href="<?php echo(base_url()); ?>landing/user_login">My Account</a> |
+                        <a href="<?php echo(base_url()); ?>user_login">My Account</a> |
                         <a href="<?php echo(base_url()); ?>landing/contact_us">Contact us</a>
                     <div class="flags">
 
@@ -235,8 +235,8 @@
                     </div>
 
                     </br>
-                    <span style="margin-left:230px"class="navbar-form"><a href="<?php echo (base_url()); ?>landing/user_register" class="ts-bt bt-login"><i class="fa fa-user"></i>Register</a></span>
-                    <span style="margin-right:20px"class="navbar-form"><a href="<?php echo (base_url()); ?>landing/user_login" class="ts-bt bt-login"><i class="fa fa-sign-in"></i>LOGIN</a></span>
+                    <span style="margin-left:230px"class="navbar-form"><a href="<?php echo (base_url()); ?>user_register" class="ts-bt bt-login"><i class="fa fa-user"></i>Register</a></span>
+                    <span style="margin-right:20px"class="navbar-form"><a href="<?php echo (base_url()); ?>user_login" class="ts-bt bt-login"><i class="fa fa-sign-in"></i>LOGIN</a></span>
     
                 </div>
             </div>
@@ -497,7 +497,7 @@
                     <div class="col-xs-12 col-md-5">
                         <span class="glyphicon glyphicon-globe"></span> View our Location Map<br><br>
                         <iframe
-                            src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Flick+Media+Ltd+Suite+110,+Queens+Way+House+275-285+High+Street+Stratford,+London+%E2%80%93+E15+2TF&sll=37.0625,-95.677068&sspn=34.038806,56.513672&ie=UTF8&hq=Flick+Media+Ltd+Suite+110,+Queens+Way+House+275-285+High+Street&hnear=London+E15+2TF,+UK&view=map&ei=i-w-S6vQJ5CojAeE7ZSWCQ&attrid=&ll=51.544253,0.000601&spn=0.007101,0.013797&z=14&iwloc=A&cid=2785574160978382141&output=embed"
+                            src="https://www.google.com/maps/embed/v1/place?q=Victoria+Towers,+Nairobi+Upper+Hill,+Nairobi,+Kenya&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"
                             width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"
                             marginwidth="0"></iframe>
                     </div>
@@ -838,22 +838,7 @@
                             </div>
                             <div class="form-field-info"></div>
                         </div>
-                        <div class="form-group">
-                            <label for="security_captcha-input" class="label_class  col-sm-4 control-label" style="">
-                                Please enter the 4 letters displayed right:<span class="star_class " style="">*</span>
-                            </label>
-
-                            <div class="col-sm-8">
-                                    <span class="ui-widget">
-<img width="145" height="50" alt="" src="temp/cache/2c88fbaf4e8b7c9e40ca8855a292eb10.png"/>
-<input type="hidden" name="security_captcha[id]" value="2c88fbaf4e8b7c9e40ca8855a292eb10"
-       title="Please enter the 4 letters displayed left" class="form-control" id="security_captcha-id">
-<input type="text" name="security_captcha[input]" id="security_captcha-input" value=""
-       title="Please enter the 4 letters displayed left" class="form-control"></span>
-                                <span class="input-errors" id="security_captcha-input_err"></span>
-                                <!--<div class="form-field-info"><div class="ui-widget ui-helper-clearfix info"><div class="ui-widget-header ui-corner-all ui-state-default" title=""><p><span class="ui-icon ui-icon-info"></span></p></div></div></div>-->
-                            </div>
-                        </div>
+                        
 
                     </fieldset>
                 </form>

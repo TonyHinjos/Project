@@ -46,7 +46,7 @@ class User_register extends CI_Controller
             'password' => md5($password),
             'mobile_no' => $mobile_no,
             'national_id' => $national_id,
-            'county' => $county,
+            'county_id' => $county,
             'ward' => $ward,
             'web_address' => $web_address
             

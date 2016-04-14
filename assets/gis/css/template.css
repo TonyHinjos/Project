@@ -61,9 +61,9 @@ select.ui-widget-content, textarea.ui-widget-content{
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	color:#3C3C3C;
-	padding:5px;
+	padding: 12px 20px;
 	margin:0 10px 0 0;
-	width:auto;
+	width:200px;
 }
 
 input[type="checkbox"],
@@ -327,7 +327,7 @@ hr.dashed{
 #banner-inner{
 	background:url(../images/map-bg.png) center center no-repeat;
 	background-color:#1A1A1A;
-	height:150px;
+	height:170px;
 	margin-bottom:10px;
 	margin-top:-10px;
 }
@@ -352,6 +352,17 @@ hr.dashed{
 	font-size:17px;
 	color:#FFF;
 	padding:12px 20px;
+	white-space:normal;
+	display:inline-block;
+	border:0;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	margin-left:4px;	
+}
+#banner-inner .btn-group input{
+	font-size:17px;
+	padding:12px 14px;
 	white-space:normal;
 	display:inline-block;
 	border:0;
