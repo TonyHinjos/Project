@@ -41,7 +41,7 @@ class User_search_model extends CI_Model
         $this->db->where('user_search_id', $user_search_id);
         $this->db->update('user_search', $data); 
         
-        //this->db->where('user_search_id',$id);
+        $this->db->where('user_search_id',$user_search_id);
         $query = $this->db->get('user_search');
         $query_result = $query->result();
         return $query_result;

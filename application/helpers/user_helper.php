@@ -1,8 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-// Be sure to include the file you've just downloaded
-require_once('AfricasTalkingGateway.php');
-
 
 function is_logged_in()
 {
@@ -15,6 +12,35 @@ function is_logged_in()
         return false;
     }
 
+}
+function getTimeDifference($time) {
+    //Let's set the current time
+    $currentTime = date('Y-m-d H:i:s');
+    $toTime = strtotime($currentTime);
+
+    //And the time the notification was set
+    $fromTime = strtotime($time);
+
+    //Now calc the difference between the two
+    $timeDiff = floor(abs($toTime - $fromTime) / 60);
+
+    //Now we need find out whether or not the time difference needs to be in
+    //minutes, hours, or days
+    if ($timeDiff < 2) {
+        $timeDiff = "Just now";
+    } elseif ($timeDiff > 2 && $timeDiff < 60) {
+        $timeDiff = floor(abs($timeDiff)) . " minutes ago";
+    } elseif ($timeDiff > 60 && $timeDiff < 120) {
+        $timeDiff = floor(abs($timeDiff / 60)) . " hour ago";
+    } elseif ($timeDiff < 1440) {
+        $timeDiff = floor(abs($timeDiff / 60)) . " hours ago";
+    } elseif ($timeDiff > 1440 && $timeDiff < 2880) {
+        $timeDiff = floor(abs($timeDiff / 1440)) . " day ago";
+    } elseif ($timeDiff > 2880) {
+        $timeDiff = floor(abs($timeDiff / 1440)) . " days ago";
+    }
+
+    return $timeDiff;
 }
 
 
@@ -254,6 +280,214 @@ function get_product_name_from_product_id($product_id)
     return $product_name;
 }
 
+function UUIDv4() {
+    return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+
+        // 32 bits for "time_low"
+        mt_rand(0, 0xffff), mt_rand(0, 0xffff),
+
+        // 16 bits for "time_mid"
+        mt_rand(0, 0xffff),
+
+        // 16 bits for "time_hi_and_version",
+        // four most significant bits holds version number 4
+        mt_rand(0, 0x0fff) | 0x4000,
+
+        // 16 bits, 8 bits for "clk_seq_hi_res",
+        // 8 bits for "clk_seq_low",
+        // two most significant bits holds zero and one for variant DCE1.1
+        mt_rand(0, 0x3fff) | 0x8000,
+
+        // 48 bits for "node"
+        mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff)
+    );
+}
+
+
+
+
+function randomPassword()
+{
+    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789_-)(&$%#@!+=";
+    $pass = array(); //declared $pass as an array
+    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    for ($i = 0; $i < 8; $i++) {
+        $n = rand(0, $alphaLength);
+        $pass[] = $alphabet[$n];
+    }
+    return implode($pass); //turn the array into a string
+}
+
+
+function get_user_id_from_email_address($user_email)
+{
+    $CI = &get_instance ();
+    $CI->db->where("user_email",$user_email);
+    $result=$CI->db->get("users");
+    $result=$result->result()[0]->user_id;
+
+    return $result;
+}
+
+function get_user_id_from_phone_number($user_phone)
+{
+    $CI = &get_instance ();
+    $CI->db->where("user_phone",$user_phone);
+    $result=$CI->db->get("users");
+    $result=$result->result()[0]->user_id;
+
+    return $result;
+}
+
+function get_user_name_from_user_id($user_id)
+{
+    $CI = &get_instance ();
+    $CI->db->where("user_id",$user_id);
+    $result=$CI->db->get("users");
+    if($result->num_rows()>0)
+    {
+        $result=$result->result()[0]->user_surname." ".$result->result()[0]->user_other_names;
+
+       // die("hhhhhhhhhhhhhhhhhhhhhhhhhhhhffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        return $result;
+    }
+    else
+    {
+     return null;
+    }
+
+}
+
+function get_ward_coordinators($ward_id)
+{
+    $CI = &get_instance ();
+    $CI->db->where("ward_id",$ward_id);
+    $result=$CI->db->get("ward_coordinators");
+    if($result->num_rows()>0)
+    {
+        $return_array=array();
+        foreach($result->result() as $res)
+        {
+            $return_array[]=$res->user_id;
+        }
+        return $return_array;
+
+    }
+    else
+    {
+        return null;
+    }
+
+}
+
+
+
+function get_constituency_coordinators($constituency_id)
+{
+    $CI = &get_instance ();
+    $CI->db->where("constituency_id",$constituency_id);
+    $result=$CI->db->get("constituency_coordinators");
+    if($result->num_rows()>0)
+    {
+        $return_array=array();
+        foreach($result->result() as $res)
+        {
+            $return_array[]=$res->user_id;
+        }
+        return $return_array;
+
+    }
+    else
+    {
+        return null;
+    }
+
+}
+
+function get_county_coordinators($county_id)
+{
+    $CI = &get_instance ();
+    $CI->db->where("county_id",$county_id);
+    $result=$CI->db->get("county_coordinators");
+    if($result->num_rows()>0)
+    {
+        $return_array=array();
+        foreach($result->result() as $res)
+        {
+            $return_array[]=$res->user_id;
+        }
+        return $return_array;
+
+    }
+    else
+    {
+        return null;
+    }
+
+}
+
+
+
+
+
+function send_sms($number,$message)
+{
+
+
+    $username   = "urandu";
+    $apikey     = "1677ae70e5d03411d857f3c22e046441681af2f56c3052cadad3f0305aaa3218";
+
+
+    $recipients = $number;
+
+
+    $message    = $message;
+
+
+    $gateway    = new AfricasTalkingGateway($username, $apikey);
+
+
+    try
+    {
+        // Thats it, hit send and we'll take care of the rest.
+        $results = $gateway->sendMessage($recipients, $message);
+        foreach($results as $result) {
+
+        }
+        $CI=get_instance();
+        $data=array(
+            "phone_number"=>$number,
+            "message"=>$message
+        );
+        $CI->db->insert("sms_log",$data);
+    }
+    catch ( AfricasTalkingGatewayException $e )
+    {
+        echo "Encountered an error while sending: ".$e->getMessage();
+    }
+
+// DONE!!!
+
+}
+
+
+
+
+function send_mail($from,$subject,$to,$message,$from_name="project-storm")
+{
+
+    $CI=get_instance();
+    $CI->email->from($from, $from_name);
+    $CI->email->to($to);
+
+
+    $CI->email->subject($subject);
+    $CI->email->message($message);
+
+    $CI->email->send();
+
+   // $CI->email->print_debugger();
+}
 
 
 

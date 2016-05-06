@@ -351,15 +351,25 @@
                             class="fa fa-sitemap"></i> Create New Application</a></li>
                     <!--<li><a href="http://demo.script4realestate.com/Menu/backend/list" class=""><i
                             class="fa fa-gear"></i> Manage Applications</a></li>-->
-                    <li><a href="" class=""><i
-                            class="fa fa-check-square-o"></i> Manage Application(s)</a></li>
+                   <!-- <li><a href="" class=""><i
+                            class="fa fa-check-square-o"></i> Manage Application(s)</a></li>-->
                 </ul>
             </div>
 
         </li>
-
         <li>
-            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>SITE</span></a>
+            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>APPLICATIONS HISTORY</span></a>
+
+            <div class="grid-container3">
+                <ul>
+                    <li><a href="<?php echo(base_url()); ?>manage_applications" class="" ><i class="fa fa-search"></i>
+                        Manage Applications</a></li>
+                </ul>
+            </div>
+
+        </li>
+        <li>
+            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>GIS VIEWING</span></a>
 
             <div class="grid-container3">
                 <ul>
@@ -369,18 +379,6 @@
             </div>
 
         </li>
-        <li>
-            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>TITLE DEED</span></a>
-
-            <div class="grid-container3">
-                <ul>
-                    <li><a href="" class="" target="_blank"><i class="fa fa-search"></i>
-                        Land Search</a></li>
-                </ul>
-            </div>
-
-        </li>
-
 
      <li>
             <a href="javascript:void(0);" title=""><i class="fa fa-cube"></i> <span>LAND MAPS</span></a>
@@ -404,18 +402,7 @@
                 </ul>
             </div>
 
-        </li>
-
-
-
-
-
-
-
-
-
-
-        
+        </li>      
        
        
 

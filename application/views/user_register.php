@@ -439,18 +439,7 @@ $( document ).tooltip({
 
                 });
 
-                function gateWayList(info, member_id) {
-                    var payment_method = '<div><span class="mod-label">Pay To :</span> <select name="full_payment" id="full_payment" >' +
-                        '<option value="">Select...........</option>';
-                    $.each(info, function (index, obj) {
-                        payment_method += '<option value="' + obj['id'] + '_' + member_id + '">' + obj['name'] + '</option>';
-                    });
-
-                    payment_method += '</select></div><div id="full_payment_link"></div>';
-                    $('#memberFormDiv').html(payment_method);
-                    paymentAction();
-                }
-
+                
                 function paymentAction() {
                     $('#full_payment').change(function () {
                         var self = this;
@@ -517,69 +506,6 @@ $( document ).tooltip({
                     });
                 }
 
-                /***********************************************************************UPLOAD FUNCTIONS START********************************************************/
-
-                function languageArray() {
-                    var language_array = [];
-                    language_array['portfolio_upload_dy_text_select'] = "Upload..";
-                    language_array['portfolio_upload_text_cancel'] = "Cancel";
-                    language_array['portfolio_upload_text_dropFilesHere'] = "drop files here to upload";
-                    language_array['portfolio_upload_text_remove'] = "Remove";
-                    language_array['portfolio_upload_text_retry'] = "Retry";
-                    language_array['portfolio_upload_text_statusFailed'] = "Failed";
-                    language_array['portfolio_upload_text_statusUploaded'] = "Uploaded";
-                    language_array['portfolio_upload_text_statusUploading'] = "Uploading";
-                    language_array['portfolio_upload_text_uploadSelectedFiles'] = "Upload Selected Files";
-                    language_array['portfolio_file_extension_dy_support'] = "Allowable file extensions are ";
-                    language_array['portfolio_file_no_ext_dy_support'] = "There is no extension in the uploaded file.";
-                    language_array['portfolio_file_extension_dy_not_supportable_ext1'] = "Your file extension";
-                    language_array['portfolio_file_extension_dy_not_supportable_ext2'] = "is NOT allowed to upload.";
-                    language_array['portfolio_file_size_dy_support'] = "Maximum file size is ";
-                    language_array['portfolio_file_upload_err'] = "Failed to upload file name";
-                    return language_array;
-                }
-
-
-                function successFileDecoretion(fileObj, serverData, upload_field, upload_value_field) {
-                    var extension = fileObj.extension;
-                    var ext = extension.replace('.', '');
-
-                    var img_path = commonFilePath(serverData.file_path, fileObj.name);
-
-
-                    var img_code = '<div class="thumb"><img src="' + img_path + '" title="' + fileObj.name + '" width="30" height="20" /></div>'
-                    var down_link = (!isImage(fileObj)) ? '<br /><a href="' + serverData.file_path + '/' + fileObj.name + '">Download</a>' : '';
-                    var checked = '';
-                    var primary = '&nbsp;&nbsp;&nbsp;';
-                    var block = 'selected_file_' + upload_value_field;
-                    var img_type = '';
-                    switch (upload_value_field) {
-                        case 'product_thumb':
-                            checked = ($('#' + upload_value_field).val() == '') ? ' checked="checked" ' : '';
-                            img_type = ($('#' + upload_value_field).val() == '') ? "<span class='main'>Main</span><br />" : "<span class='related'>Related</span><br />";
-                            primary = '<input class="radio_style" type="radio" name="product_thumb_primary" id="product_thumb_primary" ' + checked + ' value="' + fileObj.name + '" title="Click To primary" />';
-                            break;
-                        case 'product_file':
-                            checked = ($('#' + upload_value_field).val() == '') ? ' checked="checked" ' : '';
-                            img_type = ($('#' + upload_value_field).val() == '') ? "<span class='main'>Main</span><br />" : "<span class='related'>Related</span><br />";
-                            primary = '<input class="radio_style" type="radio" name="product_file_primary" id="product_file_primary" ' + checked + ' value="' + fileObj.name + '" title="Click To primary" />';
-                            break;
-                    }
-
-                    var del_link = '<a href="javascript:void(0)" class="delete_uploaded_image_link" field_name="' + upload_value_field + '" file_name="' + fileObj.name + '" file_path="' + serverData.file_path + '">Delete</a>' + primary + down_link;
-
-                    if (serverData.multi) {
-                        $('#' + block).append('<div class="upload-img box">' + img_type + '<span>' + img_code + '<br />&nbsp;' + del_link + '</span></div>');
-                        var file_val = ($('#' + upload_value_field).val() == '') ? fileObj.name : $('#' + upload_value_field).val() + ',' + fileObj.name;
-                    }
-                    else {
-                        $('#' + block).html('<div class="upload-img box">' + img_type + '<span>' + img_code + '<br />&nbsp;' + del_link + '</span></div>');
-                        var file_val = fileObj.name;
-                    }
-                    $('#' + upload_value_field).val(file_val);
-                    deleteFiles("Main", "Related", "/Portfolio/frontend/remove", "Delete");
-
-                }
 
                 function onComplete(e) {
 
@@ -951,7 +877,7 @@ border: 1px solid red;
                                     <div class="form-field">
                                               <span class="ui-widget">
 <select required="" name="gender" id="gender" title="Enter Gender" size="1"  class="form-control" >
-<option required="" selected value="4">Please Select</option>
+<option  selected value="4">Please Select</option>
     <option value="male">Male</option>
     <option value="female">Female</option>
     

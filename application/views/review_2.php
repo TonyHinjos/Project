@@ -386,7 +386,7 @@
 
         </li>
 
-        <li>
+       <li>
             <a href="javascript:void(0);" title=""><i class="fa fa-bars"></i> <span>APPLICATIONS</span></a>
 
             <div class="grid-container3">
@@ -395,35 +395,35 @@
                             class="fa fa-sitemap"></i> Create New Application</a></li>
                     <!--<li><a href="http://demo.script4realestate.com/Menu/backend/list" class=""><i
                             class="fa fa-gear"></i> Manage Applications</a></li>-->
-                    <li><a href="" class=""><i
-                            class="fa fa-check-square-o"></i> Manage Application(s)</a></li>
+                   <!-- <li><a href="" class=""><i
+                            class="fa fa-check-square-o"></i> Manage Application(s)</a></li>-->
                 </ul>
             </div>
 
         </li>
-
         <li>
-            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>SITE</span></a>
+            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>APPLICATIONS HISTORY</span></a>
 
             <div class="grid-container3">
                 <ul>
-                    <li><a href="<?php echo(base_url()); ?>gis_view" class="" target="_blank"><i class="fa fa-laptop"></i>
+                    <li><a href="<?php echo(base_url()); ?>manage_applications" class="" ><i class="fa fa-search"></i>
+                        Manage Applications</a></li>
+                </ul>
+            </div>
+
+        </li>
+        <li>
+            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>GIS VIEWING</span></a>
+
+            <div class="grid-container3">
+                <ul>
+                    <li><a href="<?php base_url(); ?>gis_view" class="" target="_blank"><i class="fa fa-laptop"></i>
                         Site Preview</a></li>
                 </ul>
             </div>
 
         </li>
-        <li>
-            <a href="javascript:void(0);" title=""><i class="fa fa-globe"></i> <span>TITLE DEED</span></a>
 
-            <div class="grid-container3">
-                <ul>
-                    <li><a href="" class="" target="_blank"><i class="fa fa-search"></i>
-                        Land Search</a></li>
-                </ul>
-            </div>
-
-        </li>
 
 
      <li>
@@ -668,45 +668,48 @@ $(document).ready(function() {
       
         <div>
           <div id="form_container" class="WarpShadow WLarge WNormal">
-        <form  method="post" onsubmit="document.getElementById('review_submit').value='Saving. Please wait....';">
+        <form  id="" method="post" action="" onsubmit="document.getElementById('review_submit').value='Saving. Please wait....';">
 
         <div class="panel panel-default">
             
             <div class="">
-              <?php print_r($query);?>
+              <!--<?php print_r($query);?>-->
                <table id="machform_review_table" cellpadding="0" cellspacing="0" border="0" width="100%">
               
 <tbody >
 
+<?php foreach ($query as $row): ?>
 
 
 <tr>
 
 <td style="color:#6CBE42;line-height:50px;" class="mf_review_label" width="40%">Land Title Number</td>
-<td style="color:#6CBE42;"class="mf_review_value" width="60%"></td>
+<td style="color:#6CBE42;"class="mf_review_value" width="60%"><?=$row->title_number;?></td>
 </tr>
 
 <tr class="alt">
 <td style="color:#6CBE42;line-height:50px;" class="mf_review_label" width="40%">Land Parcel Number</td>
 
-<td style="color:#6CBE42;"class="mf_review_value" width="60%"></td>
+<td style="color:#6CBE42;"class="mf_review_value" width="60%"><?=$row->parcel_number;?></td>
 </tr>
 
 <tr>
 <td style="color:#6CBE42;line-height:50px;" class="mf_review_label" width="40%">Purpose of the Search</td>
-<td style="color:#6CBE42;" class="mf_review_value" width="60%"></td>
+<td style="color:#6CBE42;" class="mf_review_value" width="60%"><?=$row->purpose;?></td>
 </tr>
 <tr>
  <td  id="li_buttons">
+               <input name="id" value="463" type="hidden">
+                <input name="mf_page_from" value="0" type="hidden">
                 
-              <input id="review_submit" class="btn-global" name="review_submit" value="Submit" type="submit">
-              <!--<span title="Edit" db_user_search_id='<?php echo $search_review->user_search_id ?>' class="btn-global" name="review_back" value="Edit" type="submit" ><a  style="color: #FFF;" href="<?php echo (base_url()); ?>user_search/edit/<?=$search_review->user_search_id?>/<?=$search_review->title_number?>">Edit</a></span>-->
+              <input href="#" id="review_submit" class="btn-global" name="review_submit" value="Submit" type="submit">
+              <span title="Edit" db_user_search_id='<?php echo $row->user_search_id ?>' class="btn-global" name="review_back" value="Edit" type="submit" ><a  style="color: #FFF;" href="<?php echo (base_url()); ?>user_search/edit/<?=$row->user_search_id?>/<?=$row->title_number?>">Edit</a></span>
     
 
             <td>
 
 </tr>
- 
+ <?php endforeach; ?>
 
 </tbody></table>
            

@@ -85,6 +85,8 @@ class User_search extends MY_Controller
 	            $title_number=$this->input->post('title_number');
 		        $parcel_number=$this->input->post('parcel_number');
 	            $purpose=$this->input->post('purpose');
+	            $timestamp=date('Y-m-d h:i:sa'); 
+	
 	            $title_search_id=$this->title_search_model->get_title_search_id_given_title_number($title_number);
                 //$date = $this->input->post('date');
                 
@@ -100,6 +102,15 @@ class User_search extends MY_Controller
                $data['query'] =   $this->db->get_where('user_search', array('user_search_id'=>$user_search_id));
                $data['listquery'] = $this->user_search_model->listItem();
                $this->load->view('update_search',$data);
+               
+            }
+
+    function dit(){
+               $user_search_id = $this->uri->segment(3);
+               $data['title_number_val'] = str_replace("%20"," ",$this->uri->segment(4));
+               $data['query'] =   $this->db->get_where('user_search', array('user_search_id'=>$user_search_id));
+               $data['listquery'] = $this->user_search_model->listItem();
+               $this->load->view('view_entry',$data);
                
             }
                     

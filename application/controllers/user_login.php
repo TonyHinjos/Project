@@ -68,6 +68,7 @@ class User_login extends CI_Controller
         } else // incorrect username or password
         {
             redirect(base_url() .'user_login?error=true');
+            //echo'</br></br><div class="alert alert-success">One record inserted Successfully</div>';
             //$data['error_message'] = TRUE;
             //$this->load->view('login', $data);
         }
